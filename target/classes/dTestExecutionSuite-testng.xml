@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maui Jim Test Execution Suite">
+	<parameter name="appURL" value="https://usmauijim.stg/" />
+	<parameter name="browserType" value="firefox" />
+	<test name="Registration Page">
+		<classes>
+			<class name="com.pragiti.excutionEngine.UIExecutor">
+			</class>
+		</classes>
+	</test>
+</suite>

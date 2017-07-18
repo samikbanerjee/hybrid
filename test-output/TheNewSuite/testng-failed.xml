@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TheNewSuite]">
+  <parameter name="appURL" value="https://usmauijim.stg/"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="Registration Page(failed)">
+    <classes>
+      <class name="com.pragiti.kdd.UIExecutor">
+        <parameter name="fileName" value="LogInTestCases.xlsx"/>
+        <parameter name="worksheet" value="TestCases"/>
+        <methods>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pragiti.kdd.UIExecutor -->
+    </classes>
+  </test> <!-- Registration Page(failed) -->
+</suite> <!-- Failed suite [TheNewSuite] -->

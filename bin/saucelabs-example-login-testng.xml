@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- 	using class tag and priority annotation : sequnecing -->
+<suite name="LoginPageTest">
+<parameter name="appURL" value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics"/>
+<parameter name="browserType" value="saucelabs"/>
+  <test name="LoginTest">
+    <classes>
+      <class name="com.pragiti.test.LoginPageTest"/>
+<!-- here you can add other cases to run test together for ex.
+	  <class name="com.pragiti.test.MyAccountPageTest"/>
+      <class name="com.pragiti.test.WishlistTest"/> -->
+    </classes>
+  </test>
+</suite>
+
+<!-- 	using class tag and ignore -->
+<!-- <suite name="LoginPageTest">
+<parameter name="appURL" value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics"/>
+<parameter name="browserType" value="chrome"/>
+  <test name="LoginTest">
+    <classes>
+      <class name="com.pragiti.test.LoginPageTest">
+	      <methods>
+		      <include name="test_login_with_valid_input"/>
+	      </methods>
+      </class>
+    </classes>
+  </test>
+</suite> -->
+
+
+
+<!-- 	using group : exclude regression-->
+<!-- <suite name="LoginPageTest" >
+	<parameter name="appURL"
+		value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics" />
+	<parameter name="browserType" value="chrome" />
+	<test name="LoginTest">
+		<groups>
+			<run>
+				<exclude name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.pragiti.test.LoginPageTest" />
+		</classes>
+	</test>
+</suite> -->

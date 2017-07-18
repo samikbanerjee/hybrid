@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- using class tag and priority annotation : sequnecing -->
+<suite name="MultiTest">
+	<parameter name="appURL"
+		value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics" />
+
+	<parameter name="browserType" value="chrome" />
+	<test name="MultiTest">
+		<classes>
+			<class name="com.pragiti.test.UserRegistrationTest" />
+			<class name="com.pragiti.test.LoginPageTest" />
+			<class name="com.pragiti.test.CartPageTest" />
+		</classes>
+	</test>
+</suite>

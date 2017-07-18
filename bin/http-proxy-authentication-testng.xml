@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomePageTest">
+	<parameter name="appURL" value=" https://www.engprod-charter.net/" />
+	<parameter name="browserType" value="IE" />
+	<test name="home test">
+		<classes>
+			<class name="com.pragiti.test.HTTPProxyAuthenticationTest" />
+
+		</classes>
+	</test>
+</suite>
+
+

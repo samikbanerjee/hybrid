@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- 	using class tag and priority annotation : sequnecing -->
+<suite name="LogincheckoutDataSetTest">
+ <parameter name="appURL" value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics"/> 
+
+<parameter name="browserType" value="chrome"/>
+  <test name="LogincheckoutDataSetTest">
+    <classes>
+      <class name="com.pragiti.test.LoginCheckoutTestWithExcel"/>
+    </classes>
+  </test>
+</suite>

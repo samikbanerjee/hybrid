@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HomePageTest]">
+  <parameter name="appURL" value="https://electronics.local:9002/yacceleratorstorefront/electronics/en/?site=electronics"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="home test(failed)">
+    <classes>
+      <class name="com.pragiti.test.HomePageTest">
+        <methods>
+          <include name="verifyBrandImages"/>
+          <include name="verifyContentPagesLink"/>
+          <include name="verifyCart"/>
+          <include name="test_navigation_of_Myaccount_Link"/>
+          <include name="verifyRotatingBannerImage"/>
+          <include name="setUp"/>
+          <include name="test_navigation_of_ContentPagesLink"/>
+          <include name="test_navigation_of_imageLinks"/>
+          <include name="verifyNavigationMenu"/>
+          <include name="tearDown"/>
+          <include name="test_navigation_of_SigninText"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setupSuite"/>
+          <include name="test_opening_of_FirstAndSecond_level_category"/>
+          <include name="verifyCurrencyandLanguageSelector"/>
+          <include name="verifyFindStoreLink"/>
+          <include name="verify_Phone_Number"/>
+          <include name="verifyMyaccountLink"/>
+          <include name="verifySiteLogo"/>
+          <include name="verifySocialMediaLinks"/>
+          <include name="test_Home_Page_Appear_Correct"/>
+          <include name="verifyBestsellingProduct"/>
+          <include name="test_navigation_of_FindStoreLink"/>
+          <include name="verifyProductImages"/>
+          <include name="verifySearch_Field_with_Search_Glass"/>
+          <include name="test_navigation_of_SiteLogo"/>
+          <include name="verifySigninLink"/>
+        </methods>
+      </class> <!-- com.pragiti.test.HomePageTest -->
+    </classes>
+  </test> <!-- home test(failed) -->
+</suite> <!-- Failed suite [HomePageTest] -->

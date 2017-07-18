@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim Test Execution Suite]">
+  <parameter name="appURL" value="https://usmauijim.stg/"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="Registration Page(failed)">
+    <classes>
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
+          <include name="execute" invocation-numbers="0 1"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </classes>
+  </test> <!-- Registration Page(failed) -->
+</suite> <!-- Failed suite [Maui Jim Test Execution Suite] -->

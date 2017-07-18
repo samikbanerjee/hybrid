@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomePageTest">
+<parameter name="appURL" value="https://electronics.local:9002/yacceleratorstorefront/electronics/en/?site=electronics"/>
+<parameter name="browserType" value="firefox"/>
+  <test name="home test">
+    <classes>
+      <class name="com.pragiti.test.HomePageTest"/>
+    </classes>
+  </test>
+</suite>

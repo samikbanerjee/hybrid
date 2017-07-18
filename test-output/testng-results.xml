@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Maui Jim Test Execution Suite" duration-ms="25158" started-at="2017-07-18T01:30:19Z" finished-at="2017-07-18T01:30:44Z">
+    <groups>
+    </groups>
+    <test name="Registration Page" duration-ms="25158" started-at="2017-07-18T01:30:19Z" finished-at="2017-07-18T01:30:44Z">
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="initializeTestBaseSetup" is-config="true" duration-ms="10021" started-at="2017-07-17T18:30:09Z" finished-at="2017-07-17T18:30:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://usmauijim.stg/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="setupSuite" is-config="true" duration-ms="1" started-at="2017-07-17T18:30:19Z" finished-at="2017-07-17T18:30:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-17T18:30:19Z" finished-at="2017-07-17T18:30:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="execute" duration-ms="12853" started-at="2017-07-17T18:30:20Z" data-provider="xlsx" finished-at="2017-07-17T18:30:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2fc0cc3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="execute" duration-ms="11626" started-at="2017-07-17T18:30:33Z" data-provider="xlsx" finished-at="2017-07-17T18:30:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@328cf0e1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@67b92f0a]" name="tearDown" is-config="true" duration-ms="839" started-at="2017-07-17T18:30:44Z" finished-at="2017-07-17T18:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </test> <!-- Registration Page -->
+  </suite> <!-- Maui Jim Test Execution Suite -->
+</testng-results>

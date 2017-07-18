@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SearchPageTest">
+	<parameter name="appURL"
+		value="https://50.193.56.105:9002/yacceleratorstorefront/electronics/en/?site=electronics" />
+	<parameter name="browserType" value="firefox" />
+	<test name="SearchPageTest">
+		<classes>
+		<class name="com.pragiti.test.SearchPageTest" />
+		</classes>
+	</test>
+</suite>
+
