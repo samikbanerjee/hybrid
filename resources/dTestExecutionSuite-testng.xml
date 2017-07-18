@@ -2,10 +2,17 @@
 <suite name="Maui Jim Test Execution Suite">
 	<parameter name="appURL" value="https://usmauijim.stg/" />
 	<parameter name="browserType" value="firefox" />
-	<test name="Registration Page">
-		<classes>
-			<class name="com.pragiti.excutionEngine.UIExecutor">
-			</class>
-		</classes>
+	
+	<test name="Login Page">
+		<parameter name="testCase" value="LogIn.xlsx"/>
+		<parameter name="testData" value="LogIn.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
+	
+	<test name="Login Page2">
+		<parameter name="testCase" value="LogIn2.xlsx"/>
+		<parameter name="testData" value="LogIn2.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
 </suite>

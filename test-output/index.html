@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite">
-              <span class="suite-name border-passed">Maui Jim Test Execution Suite</span>
+              <span class="suite-name border-failed">Maui Jim Test Execution Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Maui_Jim_Test_Execution_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Maui_Jim_Test_Execution_Suite" class="hide-methods failed suite-Maui_Jim_Test_Execution_Suite"> (hide)</a> <!-- hide-methods failed suite-Maui_Jim_Test_Execution_Suite -->
+                      <a href="#" panel-name="suite-Maui_Jim_Test_Execution_Suite" class="show-methods failed suite-Maui_Jim_Test_Execution_Suite"> (show)</a> <!-- show-methods failed suite-Maui_Jim_Test_Execution_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Maui_Jim_Test_Execution_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([abc@test.com, 3000, 1A@23456789])">execute([abc@test.com, 3000, 1A@23456789])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Maui_Jim_Test_Execution_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,17 @@
                     <div class="method-list-content passed suite-Maui_Jim_Test_Execution_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([abc@test4.com, 3000, 1A@23456789])">execute([abc@test4.com, 3000, 1A@23456789])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([abc@test3.com, 3000, 1A@23456789])">execute([abc@test3.com, 3000, 1A@23456789])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([abc@test4.com, 3000, 1A@23456789])">execute([abc@test4.com, 3000, 1A@23456789])</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([abc@test2.com, 3000, 1A@23456789])">execute([abc@test2.com, 3000, 1A@23456789])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Maui_Jim_Test_Execution_Suite -->
@@ -122,12 +141,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Maui_Jim_Test_Execution_Suite" class="panel Maui_Jim_Test_Execution_Suite">
+          <div class="suite-Maui_Jim_Test_Execution_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pragiti.excutionEngine.UIExecutor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute([abc@test.com, 3000, 1A@23456789])">
+                  </a> <!-- execute([abc@test.com, 3000, 1A@23456789]) -->
+                  <span class="method-name">execute</span>
+                  <span class="parameters">([abc@test.com, 3000, 1A@23456789])</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@href, &apos;/logout&apos;)] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.pragiti.excutionEngine.ActionKeys.findElement(ActionKeys.java:60)
+	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:47)
+	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:24)
+	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:53)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(@href, &apos;/logout&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.76&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$101/1618984457.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Maui_Jim_Test_Execution_Suite-class-failed -->
           <div class="suite-Maui_Jim_Test_Execution_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.pragiti.excutionEngine.UIExecutor</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute([abc@test4.com, 3000, 1A@23456789])">
+                  </a> <!-- execute([abc@test4.com, 3000, 1A@23456789]) -->
+                  <span class="method-name">execute</span>
+                  <span class="parameters">([abc@test4.com, 3000, 1A@23456789])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="execute([abc@test3.com, 3000, 1A@23456789])">
@@ -138,10 +204,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="execute([abc@test4.com, 3000, 1A@23456789])">
-                  </a> <!-- execute([abc@test4.com, 3000, 1A@23456789]) -->
+                  <a name="execute([abc@test2.com, 3000, 1A@23456789])">
+                  </a> <!-- execute([abc@test2.com, 3000, 1A@23456789]) -->
                   <span class="method-name">execute</span>
-                  <span class="parameters">([abc@test4.com, 3000, 1A@23456789])</span>
+                  <span class="parameters">([abc@test2.com, 3000, 1A@23456789])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,11 +224,20 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Maui Jim Test Execution Suite&quot;&gt;
   &lt;parameter name=&quot;appURL&quot; value=&quot;https://usmauijim.stg/&quot;/&gt;
   &lt;parameter name=&quot;browserType&quot; value=&quot;firefox&quot;/&gt;
-  &lt;test name=&quot;Registration Page&quot;&gt;
+  &lt;test name=&quot;Login Page&quot;&gt;
+    &lt;parameter name=&quot;testData&quot; value=&quot;LogIn.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;testCase&quot; value=&quot;LogIn.xlsx&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.pragiti.excutionEngine.UIExecutor&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Registration Page --&gt;
+  &lt;/test&gt; &lt;!-- Login Page --&gt;
+  &lt;test name=&quot;Login Page2&quot;&gt;
+    &lt;parameter name=&quot;testData&quot; value=&quot;LogIn2.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;testCase&quot; value=&quot;LogIn2.xlsx&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pragiti.excutionEngine.UIExecutor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Page2 --&gt;
 &lt;/suite&gt; &lt;!-- Maui Jim Test Execution Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +249,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Registration Page (1 class)</span>
+                <span class="test-name">Login Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Page2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,20 +278,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'execute')
 data.setCell(0, 2, 'com.pragiti.excutionEngine.UIExecutor')
-data.setCell(0, 3, 12853);
+data.setCell(0, 3, 36338);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'execute')
 data.setCell(1, 2, 'com.pragiti.excutionEngine.UIExecutor')
-data.setCell(1, 3, 11626);
+data.setCell(1, 3, 16654);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'execute')
+data.setCell(2, 2, 'com.pragiti.excutionEngine.UIExecutor')
+data.setCell(2, 3, 13211);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'execute')
+data.setCell(3, 2, 'com.pragiti.excutionEngine.UIExecutor')
+data.setCell(3, 3, 12031);
 window.suiteTableData['Maui_Jim_Test_Execution_Suite']= { tableData: data, tableDiv: 'times-div-Maui_Jim_Test_Execution_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Maui_Jim_Test_Execution_Suite">
               </div> <!-- times-div-Maui_Jim_Test_Execution_Suite -->
             </div> <!-- times-div -->
@@ -246,23 +332,53 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">10021 ms</span>
+                <span class="method-start">18110 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">initiaLizeTest(LogIn.xlsx, LogIn.xlsx)</span>
+                <span class="method-start">18114 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">18114 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10030 ms</span>
+                <span class="method-start">18118 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">execute([abc@test4.com, 3000, 1A@23456789])</span>
-                <span class="method-start">10697 ms</span>
+                <span class="method-start">18776 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">execute([abc@test3.com, 3000, 1A@23456789])</span>
-                <span class="method-start">23552 ms</span>
+                <span class="method-start">35434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <span class="method-name">initiaLizeTest(LogIn2.xlsx, LogIn2.xlsx)</span>
+                <span class="method-start">48696 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">48697 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48697 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">execute([abc@test2.com, 3000, 1A@23456789])</span>
+                <span class="method-start">48735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">execute([abc@test.com, 3000, 1A@23456789])</span>
+                <span class="method-start">60767 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35208 ms</span>
+                <span class="method-start">97132 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

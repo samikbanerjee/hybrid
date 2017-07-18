@@ -16,6 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
@@ -26,8 +27,10 @@ public abstract class BaseSetup
 {
 	protected static final Logger LOG = Logger.getLogger(BaseSetup.class);
 	private String appUrl;
-	
 	private static WebDriver driver;
+	private String testCase;
+	private String testData;
+	
 	 // Selenium URI -- static same for everyone.
 	public static String seleniumURI = null;
 
@@ -191,5 +194,31 @@ public abstract class BaseSetup
 		this.appUrl = appUrl;
 	}
 
+	public String getTestCase() {
+		return testCase;
+	}
+
+	public void setTestCase(String testCase) {
+		this.testCase = testCase;
+	}
+
+	public String getTestData() {
+		return testData;
+	}
+
+	public void setTestData(String testData) {
+		this.testData = testData;
+	}
+	
+	@Parameters({ "testCase", "testData" })
+	@BeforeTest(alwaysRun=true)
+	public void initiaLizeTest(String testCase, String testData){
+		try {
+			setTestCase(testCase);
+			setTestData(testData);
+		} catch (Exception e) {
+			LOG.error("Error....." + e.getMessage() + e);
+		}
+	}
 
 }

@@ -3,17 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim Test Execution Suite]">
   <parameter name="appURL" value="https://usmauijim.stg/"/>
   <parameter name="browserType" value="firefox"/>
-  <test name="Registration Page(failed)">
+  <test name="Login Page2(failed)">
+    <parameter name="testData" value="LogIn2.xlsx"/>
+    <parameter name="testCase" value="LogIn2.xlsx"/>
     <classes>
       <class name="com.pragiti.excutionEngine.UIExecutor">
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
-          <include name="execute" invocation-numbers="0 1"/>
+          <include name="initiaLizeTest"/>
+          <include name="execute" invocation-numbers="1"/>
           <include name="initializeTestBaseSetup"/>
           <include name="setUp"/>
+          <include name="setUpTest"/>
         </methods>
       </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
     </classes>
-  </test> <!-- Registration Page(failed) -->
+  </test> <!-- Login Page2(failed) -->
 </suite> <!-- Failed suite [Maui Jim Test Execution Suite] -->
