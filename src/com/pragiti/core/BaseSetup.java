@@ -152,7 +152,7 @@ public abstract class BaseSetup
 		
 		System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH
 				+ "geckodriver.exe");
-		driver = new FirefoxDriver(capabilities); 
+		WebDriver driver = new FirefoxDriver(capabilities); 
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

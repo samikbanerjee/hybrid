@@ -199,10 +199,11 @@ public class ExcelUtils {
 		return (tr);
 	}
 	
-	public static Object[][] getTableArray(String filePath, String sheetName, int rowNum)throws Exception
+	public static String[] getRowArray(String filePath, String sheetName, int rowNum)throws Exception
 	{
 		
 		String[][] tr=null;
+		String[] trR=null;
 		try {
 			Object[][] tabArray=getTableArray(filePath, sheetName);
 			int cols=tabArray[rowNum].length;
@@ -215,8 +216,8 @@ public class ExcelUtils {
 		} catch (Exception e) {
 			LOG.error("Could not read the Excel sheet" + e.getStackTrace());
 		}
-		
-		return (tr);
+		trR =tr[0];
+		return (trR);
 	}
 
 }

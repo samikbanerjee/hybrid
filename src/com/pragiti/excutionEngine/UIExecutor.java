@@ -3,6 +3,7 @@
  */
 package com.pragiti.excutionEngine;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -22,12 +23,14 @@ import com.pragiti.core.ExcelUtils;
 public class UIExecutor extends BaseSetup {
 
 	public WebDriver driver;
+	public String appUrl;
 	public String testCase;
 	public String testData;
 
 	@BeforeClass
 	public void setUp() {
 		driver = getDriver();
+		appUrl =getAppUrl();
 	}
 	
 	@BeforeTest
@@ -43,15 +46,24 @@ public class UIExecutor extends BaseSetup {
 
 		List<TestStep> steps = TestStepsReader.getTestStepsFromXlsx(testCase, "TestCases");
 		for (TestStep step : steps) {
-			int tDindex;
-			try {
-				tDindex=Integer.parseInt(step.getInputValue());
-			} catch (Exception e) {
-				tDindex=0;
+			String sData;
+			if(step.getInputValue()==null){
+				sData="";
+			}
+			else if (step.getInputValue()=="") {
+				sData="";
+			}
+			else if (step.getInputValue().startsWith("#")) {
+				String matchVal=step.getInputValue().substring(1);
+				sData=sD[getTestDataIndex(matchVal)];
+			}
+			else {
+				sData=step.getInputValue();
 			}
 			
-			acts.executeAction(step.getKeyWord(), step.getElementIdentifier(), step.getElementIdentifierValue(), 
-					sD[tDindex], step.getAssertValue());
+			System.out.println("Executing Step: --"+step.getTestCaseId());
+			acts.executeAction(appUrl, step.getKeyWord(), step.getElementIdentifier(), step.getElementIdentifierValue(), 
+					sData, step.getAssertValue());
 		}
 		
 	}
@@ -63,6 +75,10 @@ public class UIExecutor extends BaseSetup {
 		return (testObjArray);
 	}
 
-
 	
+	public int getTestDataIndex(String matchVal) throws Exception{
+		List<String> aL=Arrays.asList(ExcelUtils.getRowArray(CoreConstants.TestDataPath + testData,"TestData", 0));
+		return aL.indexOf(matchVal);
+	}
+
 }

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim Test Execution Suite]">
-  <parameter name="appURL" value="https://usmauijim.stg/"/>
+  <parameter name="appURL" value="https://usmauijim.stg"/>
   <parameter name="browserType" value="firefox"/>
-  <test name="Login Page2(failed)">
-    <parameter name="testData" value="LogIn2.xlsx"/>
-    <parameter name="testCase" value="LogIn2.xlsx"/>
+  <test name="CheckoutRegular(failed)">
+    <parameter name="testData" value="Checkout.xlsx"/>
+    <parameter name="testCase" value="Checkout.xlsx"/>
     <classes>
       <class name="com.pragiti.excutionEngine.UIExecutor">
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
           <include name="initiaLizeTest"/>
-          <include name="execute" invocation-numbers="1"/>
+          <include name="execute" invocation-numbers="0"/>
           <include name="initializeTestBaseSetup"/>
           <include name="setUp"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
     </classes>
-  </test> <!-- Login Page2(failed) -->
+  </test> <!-- CheckoutRegular(failed) -->
 </suite> <!-- Failed suite [Maui Jim Test Execution Suite] -->

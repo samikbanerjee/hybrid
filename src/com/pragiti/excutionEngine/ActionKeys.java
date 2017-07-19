@@ -3,7 +3,9 @@ package com.pragiti.excutionEngine;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionKeys {
@@ -16,10 +18,10 @@ public class ActionKeys {
 	}
 	
 	
-	public void executeAction(String action,String elementIdentifier, 
+	public void executeAction(String appUrl, String action,String elementIdentifier, 
 			String elementIdentifierValue, String inputVal, String assertVal) throws InterruptedException{
 		switch (action) {
-		case "openUrl": this.openUrl(inputVal);
+		case "open": this.openUrl(appUrl, inputVal);
 			break;
 		case "click": this.click(elementIdentifier, elementIdentifierValue);
 			break;
@@ -27,20 +29,31 @@ public class ActionKeys {
 			break;
 		case "pause": this.pause(inputVal);
 			break;
+		case "select": this.select(elementIdentifier, elementIdentifierValue, inputVal);
+			break;
+		case "selectWindow": this.selectWindow(elementIdentifier, elementIdentifierValue);
+			break;
+		case "moveToElement": this.moveToElement(elementIdentifier, elementIdentifierValue);
+			break;
 		default:
 			break;
 		}
 	}
 	
-	
+	public void moveToElement(String elementIdentifier, String elementIdentifierValue){
+		WebElement el=findElement(elementIdentifier, elementIdentifierValue);
+		Actions actions = new Actions(dr);
+		actions.moveToElement(el);
+		actions.perform();
+	}
 	
 	public void pause(String inputVal) throws InterruptedException{
 		int t=Integer.parseInt(inputVal);
 		Thread.sleep(t);
 	}
 	
-	public void openUrl(String inputVal) {
-		dr.get(inputVal);
+	public void openUrl(String appUrl,String inputVal) {
+		dr.get(appUrl+ inputVal);
 	}
 	
 	public void click(String elementIdentifier, String elementIdentifierValue){
@@ -54,10 +67,27 @@ public class ActionKeys {
 		el.sendKeys(inputVal);
 	}
 	
+	public void select(String elementIdentifier, String elementIdentifierValue, String inputVal){
+		WebElement el=findElement(elementIdentifier, elementIdentifierValue);
+		new Select(el).selectByVisibleText(inputVal);
+	}
+	
+	public void selectWindow(String elementIdentifier, String elementIdentifierValue){
+		if(elementIdentifierValue.equalsIgnoreCase("null"))
+		{
+			dr.switchTo().defaultContent();
+		}
+		else
+		{
+			WebElement el=findElement(elementIdentifier, elementIdentifierValue);
+			dr.switchTo().frame(el);
+		}
+	}
+	
 	
 	public WebElement findElement(String elementIdentifier, String elementIdentifierValue){	
-		return (new WebDriverWait(dr, TIMEOUT_IN_SECONDS))
-				.until(ExpectedConditions.presenceOfElementLocated(findLocator(elementIdentifier, elementIdentifierValue)));
+		return (new WebDriverWait(dr, TIMEOUT_IN_SECONDS)).until(ExpectedConditions.presenceOfElementLocated(findLocator(elementIdentifier, elementIdentifierValue)));
+		//return dr.findElement(findLocator(elementIdentifier, elementIdentifierValue));
 	}
 	
 	public By findLocator(String elementIdentifier, String elementIdentifierValue){
