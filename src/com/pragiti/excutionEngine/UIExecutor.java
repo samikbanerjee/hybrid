@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.pragiti.core.BaseSetup;
 import com.pragiti.core.CoreConstants;
 import com.pragiti.core.ExcelUtils;
@@ -23,14 +22,14 @@ import com.pragiti.core.ExcelUtils;
 public class UIExecutor extends BaseSetup {
 
 	public WebDriver driver;
-	public String appUrl;
 	public String testCase;
 	public String testData;
+	
 
+	
 	@BeforeClass
 	public void setUp() {
 		driver = getDriver();
-		appUrl =getAppUrl();
 	}
 	
 	@BeforeTest
@@ -42,6 +41,8 @@ public class UIExecutor extends BaseSetup {
 	
 	@Test(dataProvider = "uiexecxlsx")
 	public void execute(String[] sD) throws Exception{
+		
+		String applUrl = getAppUrl();
 		ActionKeys  acts=new ActionKeys(driver);
 
 		List<TestStep> steps = TestStepsReader.getTestStepsFromXlsx(testCase, "TestCases");
@@ -61,17 +62,31 @@ public class UIExecutor extends BaseSetup {
 				sData=step.getInputValue();
 			}
 			
-			System.out.println("Executing Step: --"+step.getTestCaseId());
-			acts.executeAction(appUrl, step.getKeyWord(), step.getElementIdentifier(), step.getElementIdentifierValue(), 
+			if(step.getElementIdentifierValue().equalsIgnoreCase("#getFromInputValue")==true){
+				step.setElementIdentifierValue(sData);
+			}
+			
+			
+			acts.executeAction(applUrl, step.getKeyWord(), step.getElementIdentifier(), step.getElementIdentifierValue(), 
 					sData, step.getAssertValue());
 		}
 		
 	}
 	
+
+	
 	
 	@DataProvider(name="uiexecxlsx")
-	public Object[][] XLSX() throws Exception{		
-		Object[][] testObjArray = ExcelUtils.getTableArray(CoreConstants.TestDataPath + testData,"TestData",1,0);
+	public Object[][] XLSX() {		
+		Object[][] testObjArray = null;
+		try {
+				testObjArray= ExcelUtils.getTableArray(CoreConstants.TestDataPath + testData,"TestData",1,0);
+			} 
+		catch (Exception e) 
+			{
+				testObjArray=new String[1][1];
+				testObjArray[0][0]="0";
+			}
 		return (testObjArray);
 	}
 

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Maui_Jim_Test_Execution_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content failed suite-Maui_Jim_Test_Execution_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([ ,  ,  ])">execute([ ,  ,  ])</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;CANADA&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc@te...)">execute([//div[@id='holderCountry']//a[contains(text(),'CANADA')]/span[contains(text(),'(English)')], abc@te...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;AUSTRALIA&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc...)">execute([//div[@id='holderCountry']//a[contains(text(),'AUSTRALIA')]/span[contains(text(),'(English)')], abc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;India&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc@tes...)">execute([//div[@id='holderCountry']//a[contains(text(),'India')]/span[contains(text(),'(English)')], abc@tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Maui_Jim_Test_Execution_Suite" title="com.pragiti.excutionEngine.UIExecutor" hash-for-method="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;Germany&#039;)]/span[contains(text(),&#039;(German)&#039;)], abc@te...)">execute([//div[@id='holderCountry']//a[contains(text(),'Germany')]/span[contains(text(),'(German)')], abc@te...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Maui_Jim_Test_Execution_Suite -->
@@ -125,28 +140,125 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="execute([ ,  ,  ])">
-                  </a> <!-- execute([ ,  ,  ]) -->
+                  <a name="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;CANADA&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc@te...)">
+                  </a> <!-- execute([//div[@id='holderCountry']//a[contains(text(),'CANADA')]/span[contains(text(),'(English)')], abc@te...) -->
                   <span class="method-name">execute</span>
-                  <span class="parameters">([ ,  ,  ])</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: Element is not enabled
+                  <span class="parameters">([//div[@id='holderCountry']//a[contains(text(),'CANADA')]/span[contains(text(),'(English)')], abc@test90.com, 2A@34567890, SAMIK BANERJEE1])</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@href, &apos;/login&apos;)] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.pragiti.excutionEngine.ActionKeys.findElement(ActionKeys.java:116)
+	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:87)
+	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:27)
+	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(@href, &apos;/login&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.77&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.bNlQuLWjuYFu, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=54.0.1, platformVersion=10.0, moz:processID=17476.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: 890d2330-26b4-4d8e-bc6a-2737dd53cc95
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:61)
-	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:26)
-	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:65)
-... Removed 29 stack frames
+System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.213&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$101/1659286984.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;AUSTRALIA&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc...)">
+                  </a> <!-- execute([//div[@id='holderCountry']//a[contains(text(),'AUSTRALIA')]/span[contains(text(),'(English)')], abc...) -->
+                  <span class="method-name">execute</span>
+                  <span class="parameters">([//div[@id='holderCountry']//a[contains(text(),'AUSTRALIA')]/span[contains(text(),'(English)')], abc@test90.com, 2A@34567890, SAMIK BANERJEE])</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@href, &apos;/login&apos;)] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.pragiti.excutionEngine.ActionKeys.findElement(ActionKeys.java:116)
+	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:87)
+	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:27)
+	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(@href, &apos;/login&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.213&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$101/1659286984.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;India&#039;)]/span[contains(text(),&#039;(English)&#039;)], abc@tes...)">
+                  </a> <!-- execute([//div[@id='holderCountry']//a[contains(text(),'India')]/span[contains(text(),'(English)')], abc@tes...) -->
+                  <span class="method-name">execute</span>
+                  <span class="parameters">([//div[@id='holderCountry']//a[contains(text(),'India')]/span[contains(text(),'(English)')], abc@test90.com, 2A@34567890, SAMIK BANERJEE])</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@href, &apos;/login&apos;)] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.pragiti.excutionEngine.ActionKeys.findElement(ActionKeys.java:116)
+	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:87)
+	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:27)
+	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(@href, &apos;/login&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.213&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$101/1659286984.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute([//div[@id=&#039;holderCountry&#039;]//a[contains(text(),&#039;Germany&#039;)]/span[contains(text(),&#039;(German)&#039;)], abc@te...)">
+                  </a> <!-- execute([//div[@id='holderCountry']//a[contains(text(),'Germany')]/span[contains(text(),'(German)')], abc@te...) -->
+                  <span class="method-name">execute</span>
+                  <span class="parameters">([//div[@id='holderCountry']//a[contains(text(),'Germany')]/span[contains(text(),'(German)')], abc@test90.com, 2A@34567890, SAMIK BANERJEE1])</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@href, &apos;/login&apos;)] (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.pragiti.excutionEngine.ActionKeys.findElement(ActionKeys.java:116)
+	at com.pragiti.excutionEngine.ActionKeys.click(ActionKeys.java:87)
+	at com.pragiti.excutionEngine.ActionKeys.executeAction(ActionKeys.java:27)
+	at com.pragiti.excutionEngine.UIExecutor.execute(UIExecutor.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(@href, &apos;/login&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMIK-PC&apos;, ip: &apos;10.103.6.213&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$101/1659286984.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -164,13 +276,23 @@ Session ID: 890d2330-26b4-4d8e-bc6a-2737dd53cc95
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Maui Jim Test Execution Suite&quot;&gt;
   &lt;parameter name=&quot;appURL&quot; value=&quot;https://usmauijim.stg&quot;/&gt;
   &lt;parameter name=&quot;browserType&quot; value=&quot;firefox&quot;/&gt;
-  &lt;test name=&quot;CheckoutRegular&quot;&gt;
-    &lt;parameter name=&quot;testData&quot; value=&quot;Checkout.xlsx&quot;/&gt;
-    &lt;parameter name=&quot;testCase&quot; value=&quot;Checkout.xlsx&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pragiti.report.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+    &lt;parameter name=&quot;testData&quot; value=&quot;Login.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;testCase&quot; value=&quot;Login.xlsx&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.pragiti.excutionEngine.UIExecutor&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CheckoutRegular --&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test name=&quot;LoginTwoSet&quot;&gt;
+    &lt;parameter name=&quot;testData&quot; value=&quot;LoginTwoSet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;testCase&quot; value=&quot;LoginTwoSet.xlsx&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pragiti.excutionEngine.UIExecutor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTwoSet --&gt;
 &lt;/suite&gt; &lt;!-- Maui Jim Test Execution Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,7 +304,10 @@ Session ID: 890d2330-26b4-4d8e-bc6a-2737dd53cc95
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CheckoutRegular (1 class)</span>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTwoSet (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,16 +333,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'execute')
 data.setCell(0, 2, 'com.pragiti.excutionEngine.UIExecutor')
-data.setCell(0, 3, 85314);
+data.setCell(0, 3, 37852);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'execute')
+data.setCell(1, 2, 'com.pragiti.excutionEngine.UIExecutor')
+data.setCell(1, 3, 37752);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'execute')
+data.setCell(2, 2, 'com.pragiti.excutionEngine.UIExecutor')
+data.setCell(2, 3, 37650);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'execute')
+data.setCell(3, 2, 'com.pragiti.excutionEngine.UIExecutor')
+data.setCell(3, 3, 36620);
 window.suiteTableData['Maui_Jim_Test_Execution_Suite']= { tableData: data, tableDiv: 'times-div-Maui_Jim_Test_Execution_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Maui_Jim_Test_Execution_Suite">
               </div> <!-- times-div-Maui_Jim_Test_Execution_Suite -->
             </div> <!-- times-div -->
@@ -250,29 +387,59 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">11665 ms</span>
+                <span class="method-start">10273 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">initiaLizeTest(Checkout.xlsx, Checkout.xlsx)</span>
-                <span class="method-start">11670 ms</span>
+                <span class="method-name">initiaLizeTest(Login.xlsx, Login.xlsx)</span>
+                <span class="method-start">10278 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpTest</span>
-                <span class="method-start">11670 ms</span>
+                <span class="method-start">10278 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11676 ms</span>
+                <span class="method-start">10282 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">execute([ ,  ,  ])</span>
-                <span class="method-start">12422 ms</span>
+                <span class="method-name">execute([//div[@id='holderCountry']//a[contains(text(),'AUSTRALIA')]/span[contains(text(),'(English)')], abc...)</span>
+                <span class="method-start">10974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">execute([//div[@id='holderCountry']//a[contains(text(),'CANADA')]/span[contains(text(),'(English)')], abc@te...)</span>
+                <span class="method-start">48634 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <span class="method-name">initiaLizeTest(LoginTwoSet.xlsx, LoginTwoSet.xlsx)</span>
+                <span class="method-start">86529 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">86529 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">86529 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">execute([//div[@id='holderCountry']//a[contains(text(),'Germany')]/span[contains(text(),'(German)')], abc@te...)</span>
+                <span class="method-start">86570 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">execute([//div[@id='holderCountry']//a[contains(text(),'India')]/span[contains(text(),'(English)')], abc@tes...)</span>
+                <span class="method-start">124328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">97790 ms</span>
+                <span class="method-start">160979 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,21 +3,41 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim Test Execution Suite]">
   <parameter name="appURL" value="https://usmauijim.stg"/>
   <parameter name="browserType" value="firefox"/>
-  <test name="CheckoutRegular(failed)">
-    <parameter name="testData" value="Checkout.xlsx"/>
-    <parameter name="testCase" value="Checkout.xlsx"/>
+  <listeners>
+    <listener class-name="com.pragiti.report.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="Login(failed)">
+    <parameter name="testData" value="Login.xlsx"/>
+    <parameter name="testCase" value="Login.xlsx"/>
     <classes>
       <class name="com.pragiti.excutionEngine.UIExecutor">
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
           <include name="initiaLizeTest"/>
-          <include name="execute" invocation-numbers="0"/>
+          <include name="execute" invocation-numbers="0 1"/>
           <include name="initializeTestBaseSetup"/>
           <include name="setUp"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
     </classes>
-  </test> <!-- CheckoutRegular(failed) -->
+  </test> <!-- Login(failed) -->
+  <test name="LoginTwoSet(failed)">
+    <parameter name="testData" value="LoginTwoSet.xlsx"/>
+    <parameter name="testCase" value="LoginTwoSet.xlsx"/>
+    <classes>
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupSuite"/>
+          <include name="initiaLizeTest"/>
+          <include name="execute" invocation-numbers="0 1"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </classes>
+  </test> <!-- LoginTwoSet(failed) -->
 </suite> <!-- Failed suite [Maui Jim Test Execution Suite] -->

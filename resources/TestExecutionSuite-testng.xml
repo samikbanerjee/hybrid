@@ -1,12 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Maui Jim Test Execution Suite">
+	<listeners>
+    	<listener class-name="com.pragiti.report.ExtentTestNGIReporterListener" />
+  	</listeners>
+	
 	<parameter name="appURL" value="https://usmauijim.stg" />
 	<parameter name="browserType" value="firefox" />
 
 	
-	<test name="CheckoutRegular">
-		<parameter name="testCase" value="Checkout.xlsx"/>
-		<parameter name="testData" value="Checkout.xlsx"/>
+	<test name="Login">
+		<parameter name="testCase" value="Login.xlsx"/>
+		<parameter name="testData" value="Login.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	<test name="LoginTwoSet">
+		<parameter name="testCase" value="LoginTwoSet.xlsx"/>
+		<parameter name="testData" value="LoginTwoSet.xlsx"/>
 		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
 	

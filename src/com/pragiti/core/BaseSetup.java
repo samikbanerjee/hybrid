@@ -17,19 +17,17 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
-import com.pragiti.report.B2CATAEmailableReport;
 
-@Listeners(B2CATAEmailableReport.class)
 public abstract class BaseSetup 
 {
 	protected static final Logger LOG = Logger.getLogger(BaseSetup.class);
-	private String appUrl;
+	private static String appUrl;
 	private static WebDriver driver;
 	private String testCase;
 	private String testData;
+
 	
 	 // Selenium URI -- static same for everyone.
 	public static String seleniumURI = null;
@@ -41,6 +39,43 @@ public abstract class BaseSetup
         //get the uri to send the commands to.
         seleniumURI = SauceHelpers.buildSauceUri();
 	}
+	
+	@Parameters({ "browserType", "appURL" })
+	@BeforeSuite (alwaysRun=true)
+	public void initializeTestBaseSetup(String browserType, String appURL) {
+		try {
+			setDriver(browserType, appURL);
+			setAppUrl(appURL);
+		} catch (Exception e) {
+			LOG.error("Error....." + e.getMessage() + e);
+		}
+	}
+	
+	@Parameters({ "testCase", "testData" })
+	@BeforeTest(alwaysRun=true)
+	public void initiaLizeTest(String testCase, String testData){
+		try {
+			setTestCase(testCase);
+			setTestData(testData);
+		} catch (Exception e) {
+			LOG.error("Error....." + e.getMessage() + e);
+		}
+	}
+	
+	 /**
+     * Method that gets invoked after suite execution.
+     * Dumps browser log and
+     * Closes the browser
+     */
+	@AfterSuite
+	public void tearDown() {
+		if (LOG.isDebugEnabled()) {
+			LOG.debug("executing tear down ");
+		}
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.quit();
+	}
+	
 	public static WebDriver getDriver() {
 		return driver;
 	}
@@ -160,38 +195,13 @@ public abstract class BaseSetup
 		return driver;
 	}
 
-	@Parameters({ "browserType", "appURL" })
-	@BeforeSuite (alwaysRun=true)
-	public void initializeTestBaseSetup(String browserType, String appURL) {
-		try {
-			setDriver(browserType, appURL);
-			setAppUrl(appURL);
-
-		} catch (Exception e) {
-			LOG.error("Error....." + e.getMessage() + e);
-		}
-	}
-
-	 /**
-     * Method that gets invoked after suite execution.
-     * Dumps browser log and
-     * Closes the browser
-     */
-	@AfterSuite
-	public void tearDown() {
-		if (LOG.isDebugEnabled()) {
-			LOG.debug("executing tear down ");
-		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.quit();
-	}
 
 	public String getAppUrl() {
 		return appUrl;
 	}
 
 	public void setAppUrl(String appUrl) {
-		this.appUrl = appUrl;
+		BaseSetup.appUrl = appUrl;
 	}
 
 	public String getTestCase() {
@@ -210,15 +220,4 @@ public abstract class BaseSetup
 		this.testData = testData;
 	}
 	
-	@Parameters({ "testCase", "testData" })
-	@BeforeTest(alwaysRun=true)
-	public void initiaLizeTest(String testCase, String testData){
-		try {
-			setTestCase(testCase);
-			setTestData(testData);
-		} catch (Exception e) {
-			LOG.error("Error....." + e.getMessage() + e);
-		}
-	}
-
 }

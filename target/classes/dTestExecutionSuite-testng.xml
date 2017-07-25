@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maui Jim Test Execution Suite">
+	<parameter name="appURL" value="https://usmauijim.stg" />
+	<parameter name="browserType" value="firefox" />
+
+	<test name="Registration">
+		<parameter name="testCase" value="Registration.xlsx"/>
+		<parameter name="testData" value="Registration.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+
+	<test name="GuestCheckoutRegular">
+		<parameter name="testCase" value="GuestCheckout.xlsx"/>
+		<parameter name="testData" value="GuestCheckout.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+
+</suite>

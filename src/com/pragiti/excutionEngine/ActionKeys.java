@@ -1,6 +1,7 @@
 package com.pragiti.excutionEngine;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,9 +36,19 @@ public class ActionKeys {
 			break;
 		case "moveToElement": this.moveToElement(elementIdentifier, elementIdentifierValue);
 			break;
+		case "key": this.key(inputVal);
+			break;
+		case "assertText": this.assertText(elementIdentifier, elementIdentifierValue, inputVal);
+			break;
 		default:
 			break;
 		}
+	}
+	
+	
+	public void assertText(String elementIdentifier, String elementIdentifierValue, String inputVal){
+		WebElement el=findElement(elementIdentifier, elementIdentifierValue);
+		org.testng.Assert.assertEquals(el.getText(), inputVal);
 	}
 	
 	public void moveToElement(String elementIdentifier, String elementIdentifierValue){
@@ -45,6 +56,22 @@ public class ActionKeys {
 		Actions actions = new Actions(dr);
 		actions.moveToElement(el);
 		actions.perform();
+	}
+	
+	
+	public void key(String keySeq){	
+		CharSequence keysToSend;
+		switch (keySeq) {
+		case "TAB": keysToSend=Keys.TAB;
+			break;
+		case "ENTER": keysToSend=Keys.RETURN;
+			break;
+		
+		default:keysToSend=Keys.RETURN;
+			break;
+		}
+		WebElement el=dr.switchTo().activeElement();
+		el.sendKeys(keysToSend);;
 	}
 	
 	public void pause(String inputVal) throws InterruptedException{
