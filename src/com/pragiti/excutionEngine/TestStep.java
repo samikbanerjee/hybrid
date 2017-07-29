@@ -7,7 +7,7 @@ public class TestStep {
 	private String ElementIdentifier;
 	private String ElementIdentifierValue;
 	private String InputValue;
-	private String AssertValue;
+	private String Description;
 	
 	public String getTestCaseId() {
 		return TestCaseId;
@@ -39,11 +39,11 @@ public class TestStep {
 	public void setInputValue(String inputValue) {
 		InputValue = inputValue;
 	}
-	public String getAssertValue() {
-		return AssertValue;
+	public String getDescription() {
+		return Description;
 	}
-	public void setAssertValue(String assertValue) {
-		AssertValue = assertValue;
+	public void setDescription(String description) {
+		Description = description;
 	}
 	
 	

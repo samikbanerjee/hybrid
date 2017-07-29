@@ -1,8 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Maui Jim Test Execution Suite">
-	<listeners>
-    	<listener class-name="com.pragiti.report.ExtentTestNGIReporterListener" />
-  	</listeners>
+
 	
 	<parameter name="appURL" value="https://usmauijim.stg" />
 	<parameter name="browserType" value="firefox" />

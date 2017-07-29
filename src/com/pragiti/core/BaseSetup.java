@@ -14,10 +14,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
 public abstract class BaseSetup 
@@ -25,6 +31,7 @@ public abstract class BaseSetup
 	protected static final Logger LOG = Logger.getLogger(BaseSetup.class);
 	private static String appUrl;
 	private static WebDriver driver;
+	public static ExtentReports extent;
 	private String testCase;
 	private String testData;
 
@@ -35,11 +42,18 @@ public abstract class BaseSetup
 	public abstract void setUp();
 
 	@BeforeSuite
-    public void setupSuite(){
+    public void setupSuite(ITestContext ctx){	
         //get the uri to send the commands to.
         seleniumURI = SauceHelpers.buildSauceUri();
+        
+		//extent reports
+        extent = new ExtentReports();
+        ExtentHtmlReporter reporter=this.genHtmlExtReporter(ctx.getSuite().getName());
+        extent.attachReporter(reporter);
+        
 	}
 	
+
 	@Parameters({ "browserType", "appURL" })
 	@BeforeSuite (alwaysRun=true)
 	public void initializeTestBaseSetup(String browserType, String appURL) {
@@ -220,4 +234,14 @@ public abstract class BaseSetup
 		this.testData = testData;
 	}
 	
+	private ExtentHtmlReporter genHtmlExtReporter(String reportName) {
+		ExtentHtmlReporter reporter=new ExtentHtmlReporter(CoreConstants.TESTREPORTPATH + reportName +CoreConstants.ExtentReports+"_"+Timestamp.stamp()+".html");
+		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+		reporter.config().setChartVisibilityOnOpen(true);
+		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setDocumentTitle(reportName);
+		reporter.config().setEncoding(CoreConstants.REPORTENCODING);
+		reporter.config().setReportName(reportName);
+		return reporter;
+	}
 }

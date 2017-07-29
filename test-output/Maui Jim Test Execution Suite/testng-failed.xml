@@ -3,9 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim Test Execution Suite]">
   <parameter name="appURL" value="https://usmauijim.stg"/>
   <parameter name="browserType" value="firefox"/>
-  <listeners>
-    <listener class-name="com.pragiti.report.ExtentTestNGIReporterListener"/>
-  </listeners>
   <test name="Login(failed)">
     <parameter name="testData" value="Login.xlsx"/>
     <parameter name="testCase" value="Login.xlsx"/>
@@ -15,8 +12,9 @@
           <include name="tearDown"/>
           <include name="setupSuite"/>
           <include name="initiaLizeTest"/>
-          <include name="execute" invocation-numbers="0 1"/>
+          <include name="execute" invocation-numbers="1"/>
           <include name="initializeTestBaseSetup"/>
+          <include name="afterMethod"/>
           <include name="setUp"/>
           <include name="setUpTest"/>
         </methods>
@@ -32,8 +30,9 @@
           <include name="tearDown"/>
           <include name="setupSuite"/>
           <include name="initiaLizeTest"/>
-          <include name="execute" invocation-numbers="0 1"/>
+          <include name="execute" invocation-numbers="0"/>
           <include name="initializeTestBaseSetup"/>
+          <include name="afterMethod"/>
           <include name="setUp"/>
           <include name="setUpTest"/>
         </methods>

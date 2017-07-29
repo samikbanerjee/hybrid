@@ -27,7 +27,7 @@ public class TestStepsReader{
 				ts.setElementIdentifier(((String) objects[2]).trim());
 				ts.setElementIdentifierValue(((String) objects[3]).trim());
 				ts.setInputValue(((String) objects[4]).trim());
-				ts.setAssertValue(((String) objects[5]).trim());
+				ts.setDescription(((String) objects[5]).trim());
 				testSteps.add(ts);
 		}
 		return testSteps;
