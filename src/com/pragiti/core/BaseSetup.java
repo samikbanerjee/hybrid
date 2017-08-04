@@ -171,9 +171,9 @@ public abstract class BaseSetup
 	private static WebDriver initIEDriver(String appURL) {
 		LOG.info("Launching IE with new profile..");
 		
-		// Create object of DesiredCapabilities class
+		// Create object ofÂ DesiredCapabilities class
 		DesiredCapabilities cap=DesiredCapabilities.internetExplorer();
-		// Set ACCEPT_SSL_CERTS  variable to true
+		// SetÂ ACCEPT_SSL_CERTSÂ  variable to true
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		// Set the driver path
 		System.setProperty("webdriver.ie.driver", CoreConstants.DRIVERPATH
@@ -200,7 +200,6 @@ public abstract class BaseSetup
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		
 		if (OSValidator.isWindows() == true) {
-			System.out.println("gecko for windows");
 			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH
 					+ "geckodriver.exe");
 		}
