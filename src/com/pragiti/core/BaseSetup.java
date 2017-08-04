@@ -199,8 +199,17 @@ public abstract class BaseSetup
 		capabilities.setAcceptInsecureCerts(true);
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		
-		System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH
-				+ "geckodriver.exe");
+		if (OSValidator.isWindows() == true) {
+			System.out.println("gecko for windows");
+			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH
+					+ "geckodriver.exe");
+		}
+		
+		else if (OSValidator.isMac()==true) {
+			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH
+					+ "geckodriver");
+		}
+		
 		WebDriver driver = new FirefoxDriver(capabilities); 
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
