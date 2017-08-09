@@ -178,37 +178,23 @@ public abstract class BaseSetup {
 		LOG.error("Launching google chrome with new profile..");
 		//System.getProperties().list(System.out);
 		
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		// To Accept SSL certificate
+		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		if(isWindows()){
-			System.out.println("Windows");
-			DesiredCapabilities capability = DesiredCapabilities.chrome();
-			// To Accept SSL certificate
-			capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriver.exe");
-			WebDriver driver = new ChromeDriver(capability);
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.navigate().to(appURL);
+		
 		}else if(isMac()){
-			DesiredCapabilities capability = DesiredCapabilities.chrome();
-			// To Accept SSL certificate
-			capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriverMac");
-			WebDriver driver = new ChromeDriver(capability);
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.navigate().to(appURL);
 			
 		}else if (isLinux()){
-			DesiredCapabilities capability = DesiredCapabilities.chrome();
-			// To Accept SSL certificate
-			capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriverLinux");
-			WebDriver driver = new ChromeDriver(capability);
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.navigate().to(appURL);
 		}
-		
+		WebDriver driver = new ChromeDriver(capability);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.navigate().to(appURL);
 		return driver;
 	}
 
@@ -233,9 +219,7 @@ public abstract class BaseSetup {
 
 	private static WebDriver initFirefoxDriver(String appURL) {
 		LOG.info("Launching Firefox browser..");
-
 		
-		if(isWindows()){
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setAcceptUntrustedCertificates(true);
 		profile.setAssumeUntrustedCertificateIssuer(true);
@@ -244,44 +228,24 @@ public abstract class BaseSetup {
 		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		// capabilities.setAcceptInsecureCerts(true);
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+		
+		if(isWindows()){
+		
 		System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriver.exe");
-		WebDriver driver = new FirefoxDriver(capabilities);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.navigate().to(appURL);
+		
 		}else if (isMac()){
-			FirefoxProfile profile = new FirefoxProfile();
-			profile.setAcceptUntrustedCertificates(true);
-			profile.setAssumeUntrustedCertificateIssuer(true);
-
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			// capabilities.setAcceptInsecureCerts(true);
-			capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 
 			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriverMac");
 			WebDriver driver = new FirefoxDriver(capabilities);
 
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.navigate().to(appURL);
 		}else if (isLinux()){
-			FirefoxProfile profile = new FirefoxProfile();
-			profile.setAcceptUntrustedCertificates(true);
-			profile.setAssumeUntrustedCertificateIssuer(true);
-
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			// capabilities.setAcceptInsecureCerts(true);
-			capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 
 			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriverLinux");
-			WebDriver driver = new FirefoxDriver(capabilities);
-
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			driver.navigate().to(appURL);
 		}
+		WebDriver driver = new FirefoxDriver(capabilities);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.navigate().to(appURL);
 		return driver;
 	}
 	
