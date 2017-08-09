@@ -1,6 +1,9 @@
 package com.pragiti.excutionEngine;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,9 +11,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.aventstack.extentreports.ExtentTest;
 
 public class ActionKeys {
 	
+	public static ExtentTest test;
 	private static final int TIMEOUT_IN_SECONDS = 20;
 	private WebDriver dr;
 	
@@ -22,6 +27,7 @@ public class ActionKeys {
 	public void executeAction(String appUrl, String action,String elementIdentifier, 
 			String elementIdentifierValue, String inputVal, String description) throws InterruptedException{
 		switch (action) {
+	
 		case "open": this.openUrl(appUrl, inputVal);
 			break;
 		case "click": this.click(elementIdentifier, elementIdentifierValue);
@@ -40,9 +46,15 @@ public class ActionKeys {
 			break;
 		case "assertText": this.assertText(elementIdentifier, elementIdentifierValue, inputVal);
 			break;
+		case "clickback": this.clickback();
+		break;
+		case "scrolldown" : this.scrolldown(elementIdentifier, elementIdentifierValue);
+		break;
+	
 		default:
 			break;
 		}
+		
 	}
 	
 	
@@ -58,6 +70,15 @@ public class ActionKeys {
 		actions.perform();
 	}
 	
+  public void clickback(){
+	  dr.navigate().back();
+	  
+  }
+  
+ public void scrolldown(String elementIdentifier, String elementIdentifierValue){
+	 ((JavascriptExecutor)dr).executeScript("arguments[0].scrollIntoView();",findElement(elementIdentifier, elementIdentifierValue));
+ }
+  
 	
 	public void key(String keySeq){	
 		CharSequence keysToSend;
