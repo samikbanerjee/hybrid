@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -41,8 +40,6 @@ public abstract class BaseSetup {
 	public static String seleniumURI = null;
 
 	public abstract void setUp();
-	
-	private static String OS = System.getProperty("os.name").toLowerCase();
 	
 	
 
@@ -181,14 +178,14 @@ public abstract class BaseSetup {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		// To Accept SSL certificate
 		capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		if(isWindows()){
+		if(OSValidator.isWindows()){
 		
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriver.exe");
 		
-		}else if(isMac()){
+		}else if(OSValidator.isMac()){
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriverMac");
 			
-		}else if (isLinux()){
+		}else if (OSValidator.isUnix()){
 			System.setProperty("webdriver.chrome.driver", CoreConstants.DRIVERPATH + "chromedriverLinux");
 		}
 		WebDriver driver = new ChromeDriver(capability);
@@ -226,19 +223,18 @@ public abstract class BaseSetup {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		// capabilities.setAcceptInsecureCerts(true);
+		capabilities.setAcceptInsecureCerts(true);
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		
-		if(isWindows()){
+		if(OSValidator.isWindows()){
 		
 		System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriver.exe");
 		
-		}else if (isMac()){
+		}else if (OSValidator.isMac()){
 
 			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriverMac");
-			WebDriver driver = new FirefoxDriver(capabilities);
 
-		}else if (isLinux()){
+		}else if (OSValidator.isUnix()){
 
 			System.setProperty("webdriver.gecko.driver", CoreConstants.DRIVERPATH + "geckodriverLinux");
 		}
@@ -249,15 +245,6 @@ public abstract class BaseSetup {
 		return driver;
 	}
 	
-	public static boolean isWindows(){
-		return (OS.indexOf("win")>=0);
-	}
-	public static boolean isMac(){
-		return (OS.indexOf("mac")>=0);
-	}
-	public static boolean isLinux(){
-		return (OS.indexOf("nix")>=0)||(OS.indexOf("nux")>=0)||(OS.indexOf("aix")>0);
-	}
 
 	public String getAppUrl() {
 		return appUrl;

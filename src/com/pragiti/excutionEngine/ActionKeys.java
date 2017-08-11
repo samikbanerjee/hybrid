@@ -1,7 +1,5 @@
 package com.pragiti.excutionEngine;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -70,14 +68,14 @@ public class ActionKeys {
 		actions.perform();
 	}
 	
-  public void clickback(){
-	  dr.navigate().back();
+	  public void clickback(){
+		  dr.navigate().back();
+		  
+	  }
 	  
-  }
-  
- public void scrolldown(String elementIdentifier, String elementIdentifierValue){
-	 ((JavascriptExecutor)dr).executeScript("arguments[0].scrollIntoView();",findElement(elementIdentifier, elementIdentifierValue));
- }
+	 public void scrolldown(String elementIdentifier, String elementIdentifierValue){
+		 ((JavascriptExecutor)dr).executeScript("arguments[0].scrollIntoView();",findElement(elementIdentifier, elementIdentifierValue));
+	 }
   
 	
 	public void key(String keySeq){	

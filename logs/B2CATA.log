@@ -5769,3 +5769,1093 @@
 [DEBUG]  04-08-2017 13:18:22  ConnectionHolder:104 - Connection discarded
 [DEBUG]  04-08-2017 13:18:22  PoolingHttpClientConnectionManager:326 - Connection released: [id: 106][route: {}->http://localhost:5924][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
 [DEBUG]  04-08-2017 13:18:22  PoolingHttpClientConnectionManager:407 - Closing connections idle longer than 0 SECONDS
+2017-08-11 13:52:24,410 [main] INFO  BaseSetup:218 - Launching Firefox browser..
+2017-08-11 13:52:35,813 [main] ERROR BaseSetup:65 - Error.....
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.7.155', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.9tySqnVb6FU4, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=10.0, moz:processID=1088.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: c0ac3243-a6f5-4e9b-84bf-1ba45d14896borg.openqa.selenium.WebDriverException: 
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.7.155', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.9tySqnVb6FU4, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=10.0, moz:processID=1088.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: c0ac3243-a6f5-4e9b-84bf-1ba45d14896b
+2017-08-11 13:52:37,105 [main] INFO  ExcelUtils:83 - navedahmed@pragiti.com
+2017-08-11 13:52:37,120 [main] INFO  ExcelUtils:83 - 1234
+2017-08-11 13:52:37,212 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:37,214 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:37,215 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,216 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,217 [main] INFO  ExcelUtils:83 - /login
+2017-08-11 13:52:37,218 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:52:37,218 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,219 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,220 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,220 [main] INFO  ExcelUtils:83 - inputUserId
+2017-08-11 13:52:37,221 [main] INFO  ExcelUtils:83 - #UserName
+2017-08-11 13:52:37,221 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:52:37,222 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:52:37,223 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,223 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,225 [main] INFO  ExcelUtils:83 - inputPassword
+2017-08-11 13:52:37,226 [main] INFO  ExcelUtils:83 - #Password
+2017-08-11 13:52:37,227 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:52:37,228 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:52:37,229 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,232 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,233 [main] INFO  ExcelUtils:83 - checkbox1
+2017-08-11 13:52:37,237 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,238 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:52:37,238 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:52:37,241 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,244 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,245 [main] INFO  ExcelUtils:83 - validateUserButton
+2017-08-11 13:52:37,246 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,247 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:52:37,247 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:52:37,248 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,249 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,249 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,250 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:37,250 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:52:37,384 [main] INFO  ExcelUtils:83 - /p/RS717-07
+2017-08-11 13:52:37,393 [main] INFO  ExcelUtils:83 - /r/G807-0215
+2017-08-11 13:52:37,439 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:37,440 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:37,441 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,441 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,442 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:52:37,443 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:52:37,444 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,444 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:37,444 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,445 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,447 [main] INFO  ExcelUtils:83 - #PdpUrl
+2017-08-11 13:52:37,448 [main] INFO  ExcelUtils:83 - Navigate to PDP
+2017-08-11 13:52:37,449 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:52:37,450 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,450 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,451 [main] INFO  ExcelUtils:83 - 0.quantity
+2017-08-11 13:52:37,451 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:37,452 [main] INFO  ExcelUtils:83 - Quantity
+2017-08-11 13:52:37,453 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:52:37,454 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,455 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,455 [main] INFO  ExcelUtils:83 - addToCartOrderFormButton
+2017-08-11 13:52:37,456 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,456 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:52:37,457 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:52:37,458 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,458 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,460 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,461 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:37,461 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:52:37,567 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,568 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,568 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,570 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:52:37,570 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:52:37,571 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,572 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,572 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,573 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:52:37,574 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:52:37,574 [main] INFO  ExcelUtils:83 - PatF
+2017-08-11 13:52:37,575 [main] INFO  ExcelUtils:83 - PatL
+2017-08-11 13:52:37,667 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:37,668 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:37,668 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,669 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,670 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:52:37,671 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:52:37,673 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:37,675 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,679 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:37,679 [main] INFO  ExcelUtils:83 - //a[contains(@href, '/mauijimb2bstorefront/ophthalmic/shortcutFlowOphthalmic')]
+2017-08-11 13:52:37,680 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,680 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,683 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:52:37,684 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,685 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,685 [main] INFO  ExcelUtils:83 - ophthalmicFameRx
+2017-08-11 13:52:37,687 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,690 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,691 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:52:37,692 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,692 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,693 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,695 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,696 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,698 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:52:37,700 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,702 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,704 [main] INFO  ExcelUtils:83 - radioSelectOphthalmicRxType1
+2017-08-11 13:52:37,708 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,710 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,711 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:52:37,715 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,716 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,717 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,737 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,738 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,739 [main] INFO  ExcelUtils:83 - 7
+2017-08-11 13:52:37,740 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,742 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:37,745 [main] INFO  ExcelUtils:83 - //div[@id='selectLensPrescriptionType']/div[2]/label
+2017-08-11 13:52:37,748 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,750 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,751 [main] INFO  ExcelUtils:83 - 8
+2017-08-11 13:52:37,753 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,768 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,768 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,771 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,771 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,772 [main] INFO  ExcelUtils:83 - 9
+2017-08-11 13:52:37,773 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,773 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,773 [main] INFO  ExcelUtils:83 - radiolensSelection1
+2017-08-11 13:52:37,774 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,775 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,778 [main] INFO  ExcelUtils:83 - 10
+2017-08-11 13:52:37,778 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,779 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,779 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,781 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,782 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,788 [main] INFO  ExcelUtils:83 - 11
+2017-08-11 13:52:37,790 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,791 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:37,792 [main] INFO  ExcelUtils:83 - //div[@id='lensSelectionType']/div/label
+2017-08-11 13:52:37,793 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,793 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,793 [main] INFO  ExcelUtils:83 - 12
+2017-08-11 13:52:37,794 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,794 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,794 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,795 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,796 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,801 [main] INFO  ExcelUtils:83 - 13
+2017-08-11 13:52:37,801 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,802 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,802 [main] INFO  ExcelUtils:83 - inputOphthalmic1.58
+2017-08-11 13:52:37,803 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,804 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,804 [main] INFO  ExcelUtils:83 - 14
+2017-08-11 13:52:37,805 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,805 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,806 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,810 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,810 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,811 [main] INFO  ExcelUtils:83 - 15
+2017-08-11 13:52:37,812 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,812 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,812 [main] INFO  ExcelUtils:83 - selectRightEyeSphere
+2017-08-11 13:52:37,813 [main] INFO  ExcelUtils:83 - #RightEyeSphere
+2017-08-11 13:52:37,813 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,813 [main] INFO  ExcelUtils:83 - 16
+2017-08-11 13:52:37,814 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,814 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,815 [main] INFO  ExcelUtils:83 - selectRightEyeCylinder
+2017-08-11 13:52:37,817 [main] INFO  ExcelUtils:83 - #RightEyeCylinder
+2017-08-11 13:52:37,817 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,818 [main] INFO  ExcelUtils:83 - 17
+2017-08-11 13:52:37,818 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,819 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,820 [main] INFO  ExcelUtils:83 - inputRightEyeAxis
+2017-08-11 13:52:37,820 [main] INFO  ExcelUtils:83 - #inputRightEyeAxis
+2017-08-11 13:52:37,821 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,822 [main] INFO  ExcelUtils:83 - 18
+2017-08-11 13:52:37,822 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,823 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,823 [main] INFO  ExcelUtils:83 - selectRightEyePD
+2017-08-11 13:52:37,826 [main] INFO  ExcelUtils:83 - #RightEyePD
+2017-08-11 13:52:37,827 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,858 [main] INFO  ExcelUtils:83 - 19
+2017-08-11 13:52:37,860 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,861 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,861 [main] INFO  ExcelUtils:83 - selectRightEyeOC
+2017-08-11 13:52:37,861 [main] INFO  ExcelUtils:83 - #RightEyeOC
+2017-08-11 13:52:37,862 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,862 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:52:37,863 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,863 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,863 [main] INFO  ExcelUtils:83 - selectLeftEyeSphere
+2017-08-11 13:52:37,863 [main] INFO  ExcelUtils:83 - #LeftEyeSphere
+2017-08-11 13:52:37,864 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,864 [main] INFO  ExcelUtils:83 - 21
+2017-08-11 13:52:37,864 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,865 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,865 [main] INFO  ExcelUtils:83 - selectLeftEyeCylinder
+2017-08-11 13:52:37,865 [main] INFO  ExcelUtils:83 - #LeftEyeCylinder
+2017-08-11 13:52:37,866 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,866 [main] INFO  ExcelUtils:83 - 22
+2017-08-11 13:52:37,867 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,867 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,867 [main] INFO  ExcelUtils:83 - inputLeftEyeAxis
+2017-08-11 13:52:37,868 [main] INFO  ExcelUtils:83 - #inputLeftEyeAxis
+2017-08-11 13:52:37,868 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,868 [main] INFO  ExcelUtils:83 - 23
+2017-08-11 13:52:37,870 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,871 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,871 [main] INFO  ExcelUtils:83 - selectLeftEyePD
+2017-08-11 13:52:37,872 [main] INFO  ExcelUtils:83 - #LeftEyePD
+2017-08-11 13:52:37,874 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,877 [main] INFO  ExcelUtils:83 - 24
+2017-08-11 13:52:37,880 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:37,881 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,882 [main] INFO  ExcelUtils:83 - selectLeftEyeOC
+2017-08-11 13:52:37,883 [main] INFO  ExcelUtils:83 - #LeftEyeOC
+2017-08-11 13:52:37,883 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,883 [main] INFO  ExcelUtils:83 - 25
+2017-08-11 13:52:37,884 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,885 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,887 [main] INFO  ExcelUtils:83 - ctaSelectPriscription
+2017-08-11 13:52:37,888 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,888 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,888 [main] INFO  ExcelUtils:83 - 26
+2017-08-11 13:52:37,889 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,894 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,902 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,912 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,913 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,913 [main] INFO  ExcelUtils:83 - 27
+2017-08-11 13:52:37,914 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,914 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:37,932 [main] INFO  ExcelUtils:83 - (//a[contains(@href, 'javascript://')])[3]
+2017-08-11 13:52:37,933 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,933 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,935 [main] INFO  ExcelUtils:83 - 28
+2017-08-11 13:52:37,937 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,937 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,938 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,940 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,941 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,943 [main] INFO  ExcelUtils:83 - 29
+2017-08-11 13:52:37,946 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:37,949 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:37,988 [main] INFO  ExcelUtils:83 - customizedSelectedFrameCta
+2017-08-11 13:52:37,991 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,994 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:37,995 [main] INFO  ExcelUtils:83 - 30
+2017-08-11 13:52:37,995 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:37,996 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,996 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:37,999 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:37,999 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:38,000 [main] INFO  ExcelUtils:83 - 31
+2017-08-11 13:52:38,001 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:38,001 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:38,002 [main] INFO  ExcelUtils:83 - inputPatientFullName
+2017-08-11 13:52:38,003 [main] INFO  ExcelUtils:83 - #PatientFName
+2017-08-11 13:52:38,004 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:38,005 [main] INFO  ExcelUtils:83 - 32
+2017-08-11 13:52:38,008 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:38,011 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:38,012 [main] INFO  ExcelUtils:83 - inputPatientLastName
+2017-08-11 13:52:38,013 [main] INFO  ExcelUtils:83 - #PatientLName
+2017-08-11 13:52:38,014 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:38,014 [main] INFO  ExcelUtils:83 - 33
+2017-08-11 13:52:38,014 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,014 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:38,015 [main] INFO  ExcelUtils:83 - prescriptionAddToCartButton
+2017-08-11 13:52:38,015 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,015 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:38,020 [main] INFO  ExcelUtils:83 - 34
+2017-08-11 13:52:38,021 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,021 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,021 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,022 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:52:38,022 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:52:38,149 [main] INFO  ExcelUtils:83 - /mymaui/pdp?productCode=MM743
+2017-08-11 13:52:38,184 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:38,185 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:38,185 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,185 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,186 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:52:38,186 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:52:38,187 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:38,187 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:52:38,187 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,187 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,188 [main] INFO  ExcelUtils:83 - #PdpUrl
+2017-08-11 13:52:38,188 [main] INFO  ExcelUtils:83 - Navigate to PDP
+2017-08-11 13:52:38,188 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:52:38,188 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,189 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,189 [main] INFO  ExcelUtils:83 - //input[@value='Add To Cart']
+2017-08-11 13:52:38,189 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,189 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:52:38,190 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:52:38,190 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,190 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,190 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,191 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:38,191 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:52:38,296 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:38,296 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,297 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,297 [main] INFO  ExcelUtils:83 - //li[@id='holderMiniCart']/a/span[2]
+2017-08-11 13:52:38,297 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,298 [main] INFO  ExcelUtils:83 - Navigate to Cart
+2017-08-11 13:52:38,298 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:38,298 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,299 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,299 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,299 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:38,300 [main] INFO  ExcelUtils:83 - Navigate to Cart
+2017-08-11 13:52:38,300 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:52:38,300 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:52:38,300 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:52:38,301 [main] INFO  ExcelUtils:83 - inputPurchaseOrderNumber
+2017-08-11 13:52:38,301 [main] INFO  ExcelUtils:83 - This is a test order
+2017-08-11 13:52:38,301 [main] INFO  ExcelUtils:83 - Cart Page - PO
+2017-08-11 13:52:38,301 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:52:38,302 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,302 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,302 [main] INFO  ExcelUtils:83 - (//button[@type='submit'])[2]
+2017-08-11 13:52:38,302 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,304 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:52:38,304 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:52:38,305 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,305 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,305 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,305 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:38,306 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:52:38,306 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:52:38,306 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,307 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,307 [main] INFO  ExcelUtils:83 - //button[@type='submit']
+2017-08-11 13:52:38,307 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,307 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:52:38,307 [main] INFO  ExcelUtils:83 - 7
+2017-08-11 13:52:38,308 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,308 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,308 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,308 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:38,308 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:52:38,309 [main] INFO  ExcelUtils:83 - 8
+2017-08-11 13:52:38,309 [main] INFO  ExcelUtils:83 - assertText
+2017-08-11 13:52:38,310 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,310 [main] INFO  ExcelUtils:83 - //div[@id='pageContent']/div/div[2]/div/div/h5
+2017-08-11 13:52:38,310 [main] INFO  ExcelUtils:83 - YOUR RECEIPT
+2017-08-11 13:52:38,311 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:52:38,391 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:52:38,392 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:52:38,392 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:52:38,393 [main] INFO  ExcelUtils:83 - //a[contains(@href, '/mauijimb2bstorefront/logout')]
+2017-08-11 13:52:38,394 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,394 [main] INFO  ExcelUtils:83 - Logout
+2017-08-11 13:52:38,395 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:52:38,395 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:52:38,395 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,396 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:52:38,396 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:52:38,396 [main] INFO  ExcelUtils:83 - Logout
+2017-08-11 13:54:24,955 [main] INFO  BaseSetup:218 - Launching Firefox browser..
+2017-08-11 13:54:33,909 [main] INFO  ExcelUtils:83 - navedahmed@pragiti.com
+2017-08-11 13:54:33,917 [main] INFO  ExcelUtils:83 - 1234
+2017-08-11 13:54:33,981 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:33,982 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:33,983 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,983 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,984 [main] INFO  ExcelUtils:83 - /login
+2017-08-11 13:54:33,984 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:54:33,985 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:33,985 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:33,986 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:33,986 [main] INFO  ExcelUtils:83 - inputUserId
+2017-08-11 13:54:33,987 [main] INFO  ExcelUtils:83 - #UserName
+2017-08-11 13:54:33,987 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:54:33,988 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:54:33,988 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:33,988 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:33,989 [main] INFO  ExcelUtils:83 - inputPassword
+2017-08-11 13:54:33,989 [main] INFO  ExcelUtils:83 - #Password
+2017-08-11 13:54:33,990 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:54:33,990 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:54:33,991 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:33,991 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:33,992 [main] INFO  ExcelUtils:83 - checkbox1
+2017-08-11 13:54:33,992 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,993 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:54:33,993 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:54:33,994 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:33,994 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:33,995 [main] INFO  ExcelUtils:83 - validateUserButton
+2017-08-11 13:54:33,996 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,996 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:54:33,997 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:54:33,997 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:33,997 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,998 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:33,999 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:54:33,999 [main] INFO  ExcelUtils:83 - Login
+2017-08-11 13:54:34,908 [main] INFO  ExcelUtils:48 - UserName
+2017-08-11 13:54:34,909 [main] INFO  ExcelUtils:48 - Password
+2017-08-11 13:54:34,909 [main] INFO  ExcelUtils:48 - navedahmed@pragiti.com
+2017-08-11 13:54:34,910 [main] INFO  ExcelUtils:48 - 1234
+2017-08-11 13:54:35,638 [main] INFO  ExcelUtils:48 - UserName
+2017-08-11 13:54:35,639 [main] INFO  ExcelUtils:48 - Password
+2017-08-11 13:54:35,640 [main] INFO  ExcelUtils:48 - navedahmed@pragiti.com
+2017-08-11 13:54:35,641 [main] INFO  ExcelUtils:48 - 1234
+2017-08-11 13:54:42,596 [main] INFO  ExcelUtils:83 - /p/RS717-07
+2017-08-11 13:54:42,597 [main] INFO  ExcelUtils:83 - /r/G807-0215
+2017-08-11 13:54:42,635 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:42,635 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:42,636 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,636 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,637 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:54:42,638 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:54:42,638 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:42,639 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:42,639 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,640 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,640 [main] INFO  ExcelUtils:83 - #PdpUrl
+2017-08-11 13:54:42,641 [main] INFO  ExcelUtils:83 - Navigate to PDP
+2017-08-11 13:54:42,641 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:54:42,642 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:42,642 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:42,643 [main] INFO  ExcelUtils:83 - 0.quantity
+2017-08-11 13:54:42,644 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:42,644 [main] INFO  ExcelUtils:83 - Quantity
+2017-08-11 13:54:42,645 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:54:42,645 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:42,645 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:42,646 [main] INFO  ExcelUtils:83 - addToCartOrderFormButton
+2017-08-11 13:54:42,647 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,647 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:54:42,648 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:54:42,648 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:42,649 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,649 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:42,650 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:54:42,651 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:54:43,782 [main] INFO  ExcelUtils:48 - PdpUrl
+2017-08-11 13:54:43,783 [main] INFO  ExcelUtils:48 - /p/RS717-07
+2017-08-11 13:54:43,783 [main] INFO  ExcelUtils:48 - /r/G807-0215
+2017-08-11 13:54:49,400 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:49,400 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:49,401 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,401 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,401 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:54:49,402 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:54:49,402 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:49,402 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:49,403 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,403 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,403 [main] INFO  ExcelUtils:83 - #PdpUrl
+2017-08-11 13:54:49,403 [main] INFO  ExcelUtils:83 - Navigate to PDP
+2017-08-11 13:54:49,404 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:54:49,404 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:49,404 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:49,404 [main] INFO  ExcelUtils:83 - 0.quantity
+2017-08-11 13:54:49,405 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:49,405 [main] INFO  ExcelUtils:83 - Quantity
+2017-08-11 13:54:49,405 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:54:49,406 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:49,406 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:49,406 [main] INFO  ExcelUtils:83 - addToCartOrderFormButton
+2017-08-11 13:54:49,406 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,406 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:54:49,407 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:54:49,407 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:49,407 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,407 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:49,408 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:54:49,408 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:54:50,566 [main] INFO  ExcelUtils:48 - PdpUrl
+2017-08-11 13:54:50,566 [main] INFO  ExcelUtils:48 - /p/RS717-07
+2017-08-11 13:54:50,567 [main] INFO  ExcelUtils:48 - /r/G807-0215
+2017-08-11 13:54:57,888 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,889 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,889 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,889 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:54:57,890 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:54:57,890 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,890 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,891 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,891 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:54:57,892 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:54:57,893 [main] INFO  ExcelUtils:83 - PatF
+2017-08-11 13:54:57,894 [main] INFO  ExcelUtils:83 - PatL
+2017-08-11 13:54:57,932 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:54:57,932 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:54:57,933 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,933 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,933 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:54:57,934 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:54:57,934 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:54:57,934 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,935 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:54:57,935 [main] INFO  ExcelUtils:83 - //a[contains(@href, '/mauijimb2bstorefront/ophthalmic/shortcutFlowOphthalmic')]
+2017-08-11 13:54:57,935 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,936 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,936 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:54:57,937 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,937 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,937 [main] INFO  ExcelUtils:83 - ophthalmicFameRx
+2017-08-11 13:54:57,938 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,938 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,938 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:54:57,939 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,939 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,939 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,940 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,940 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,941 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:54:57,941 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,942 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,942 [main] INFO  ExcelUtils:83 - radioSelectOphthalmicRxType1
+2017-08-11 13:54:57,942 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,944 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,944 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:54:57,945 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,945 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,948 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,949 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,950 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,950 [main] INFO  ExcelUtils:83 - 7
+2017-08-11 13:54:57,950 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,951 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:54:57,951 [main] INFO  ExcelUtils:83 - //div[@id='selectLensPrescriptionType']/div[2]/label
+2017-08-11 13:54:57,951 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,951 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,952 [main] INFO  ExcelUtils:83 - 8
+2017-08-11 13:54:57,952 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,952 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,953 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,953 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,953 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,954 [main] INFO  ExcelUtils:83 - 9
+2017-08-11 13:54:57,954 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,954 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,955 [main] INFO  ExcelUtils:83 - radiolensSelection1
+2017-08-11 13:54:57,955 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,955 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,955 [main] INFO  ExcelUtils:83 - 10
+2017-08-11 13:54:57,956 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,956 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,956 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,957 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,957 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,957 [main] INFO  ExcelUtils:83 - 11
+2017-08-11 13:54:57,957 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,958 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:54:57,958 [main] INFO  ExcelUtils:83 - //div[@id='lensSelectionType']/div/label
+2017-08-11 13:54:57,958 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,959 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,959 [main] INFO  ExcelUtils:83 - 12
+2017-08-11 13:54:57,959 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,959 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,960 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,960 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,960 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,961 [main] INFO  ExcelUtils:83 - 13
+2017-08-11 13:54:57,961 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,961 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,962 [main] INFO  ExcelUtils:83 - inputOphthalmic1.58
+2017-08-11 13:54:57,962 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,962 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,964 [main] INFO  ExcelUtils:83 - 14
+2017-08-11 13:54:57,965 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,965 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,965 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,966 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,966 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,966 [main] INFO  ExcelUtils:83 - 15
+2017-08-11 13:54:57,967 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,967 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,967 [main] INFO  ExcelUtils:83 - selectRightEyeSphere
+2017-08-11 13:54:57,967 [main] INFO  ExcelUtils:83 - #RightEyeSphere
+2017-08-11 13:54:57,967 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,968 [main] INFO  ExcelUtils:83 - 16
+2017-08-11 13:54:57,968 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,968 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,968 [main] INFO  ExcelUtils:83 - selectRightEyeCylinder
+2017-08-11 13:54:57,968 [main] INFO  ExcelUtils:83 - #RightEyeCylinder
+2017-08-11 13:54:57,969 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,969 [main] INFO  ExcelUtils:83 - 17
+2017-08-11 13:54:57,969 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,969 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,969 [main] INFO  ExcelUtils:83 - inputRightEyeAxis
+2017-08-11 13:54:57,970 [main] INFO  ExcelUtils:83 - #inputRightEyeAxis
+2017-08-11 13:54:57,970 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,970 [main] INFO  ExcelUtils:83 - 18
+2017-08-11 13:54:57,970 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,970 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,971 [main] INFO  ExcelUtils:83 - selectRightEyePD
+2017-08-11 13:54:57,971 [main] INFO  ExcelUtils:83 - #RightEyePD
+2017-08-11 13:54:57,971 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,971 [main] INFO  ExcelUtils:83 - 19
+2017-08-11 13:54:57,971 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,972 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,972 [main] INFO  ExcelUtils:83 - selectRightEyeOC
+2017-08-11 13:54:57,972 [main] INFO  ExcelUtils:83 - #RightEyeOC
+2017-08-11 13:54:57,972 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,972 [main] INFO  ExcelUtils:83 - 20
+2017-08-11 13:54:57,973 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,973 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,973 [main] INFO  ExcelUtils:83 - selectLeftEyeSphere
+2017-08-11 13:54:57,974 [main] INFO  ExcelUtils:83 - #LeftEyeSphere
+2017-08-11 13:54:57,974 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,974 [main] INFO  ExcelUtils:83 - 21
+2017-08-11 13:54:57,975 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,975 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,975 [main] INFO  ExcelUtils:83 - selectLeftEyeCylinder
+2017-08-11 13:54:57,975 [main] INFO  ExcelUtils:83 - #LeftEyeCylinder
+2017-08-11 13:54:57,976 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,976 [main] INFO  ExcelUtils:83 - 22
+2017-08-11 13:54:57,976 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,977 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,977 [main] INFO  ExcelUtils:83 - inputLeftEyeAxis
+2017-08-11 13:54:57,978 [main] INFO  ExcelUtils:83 - #inputLeftEyeAxis
+2017-08-11 13:54:57,978 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,979 [main] INFO  ExcelUtils:83 - 23
+2017-08-11 13:54:57,979 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,979 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,980 [main] INFO  ExcelUtils:83 - selectLeftEyePD
+2017-08-11 13:54:57,981 [main] INFO  ExcelUtils:83 - #LeftEyePD
+2017-08-11 13:54:57,981 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,982 [main] INFO  ExcelUtils:83 - 24
+2017-08-11 13:54:57,982 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,983 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,984 [main] INFO  ExcelUtils:83 - selectLeftEyeOC
+2017-08-11 13:54:57,985 [main] INFO  ExcelUtils:83 - #LeftEyeOC
+2017-08-11 13:54:57,985 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,986 [main] INFO  ExcelUtils:83 - 25
+2017-08-11 13:54:57,986 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,986 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,987 [main] INFO  ExcelUtils:83 - ctaSelectPriscription
+2017-08-11 13:54:57,987 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,987 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,988 [main] INFO  ExcelUtils:83 - 26
+2017-08-11 13:54:57,988 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,988 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,988 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,989 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,989 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,989 [main] INFO  ExcelUtils:83 - 27
+2017-08-11 13:54:57,990 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,990 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:54:57,990 [main] INFO  ExcelUtils:83 - (//a[contains(@href, 'javascript://')])[3]
+2017-08-11 13:54:57,990 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,991 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,991 [main] INFO  ExcelUtils:83 - 28
+2017-08-11 13:54:57,991 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,992 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,992 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,992 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,993 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,993 [main] INFO  ExcelUtils:83 - 29
+2017-08-11 13:54:57,993 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:57,994 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,994 [main] INFO  ExcelUtils:83 - customizedSelectedFrameCta
+2017-08-11 13:54:57,994 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,994 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,995 [main] INFO  ExcelUtils:83 - 30
+2017-08-11 13:54:57,995 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:57,995 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,995 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:57,996 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:57,996 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,996 [main] INFO  ExcelUtils:83 - 31
+2017-08-11 13:54:57,997 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,997 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,997 [main] INFO  ExcelUtils:83 - inputPatientFullName
+2017-08-11 13:54:57,997 [main] INFO  ExcelUtils:83 - #PatientFName
+2017-08-11 13:54:57,998 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:57,998 [main] INFO  ExcelUtils:83 - 32
+2017-08-11 13:54:57,998 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:54:57,998 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:57,999 [main] INFO  ExcelUtils:83 - inputPatientLastName
+2017-08-11 13:54:57,999 [main] INFO  ExcelUtils:83 - #PatientLName
+2017-08-11 13:54:57,999 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:58,000 [main] INFO  ExcelUtils:83 - 33
+2017-08-11 13:54:58,000 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:54:58,000 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:54:58,001 [main] INFO  ExcelUtils:83 - prescriptionAddToCartButton
+2017-08-11 13:54:58,001 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:58,001 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:54:58,002 [main] INFO  ExcelUtils:83 - 34
+2017-08-11 13:54:58,002 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:54:58,002 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:58,002 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:54:58,003 [main] INFO  ExcelUtils:83 - 2000
+2017-08-11 13:54:58,003 [main] INFO  ExcelUtils:83 - Opthalmic
+2017-08-11 13:55:15,374 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:15,375 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:15,375 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:15,376 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:15,376 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:15,376 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:15,377 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:15,377 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:15,377 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:15,378 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:15,378 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:15,378 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:15,379 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,379 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,380 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,380 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,381 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,381 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,382 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,382 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,383 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,383 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,383 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:15,386 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:15,604 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:15,605 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:15,605 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:15,605 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:15,606 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:15,606 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:15,607 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:15,607 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:15,607 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:15,607 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:15,608 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:15,608 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:15,609 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,610 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,610 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,611 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,615 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,617 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,618 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,618 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,619 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,619 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,619 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:15,619 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:15,761 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:15,761 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:15,762 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:15,762 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:15,762 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:15,763 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:15,763 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:15,766 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:15,766 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:15,773 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:15,774 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:15,775 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:15,776 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,777 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,777 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,778 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,779 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,779 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,779 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,780 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,784 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,785 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,786 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:15,787 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:15,979 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:15,979 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:15,980 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:15,980 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:15,981 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:15,981 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:15,982 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:15,982 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:15,983 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:15,983 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:15,983 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:15,985 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:15,985 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,986 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,986 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,989 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,990 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,990 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,990 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,991 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:15,991 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:15,995 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,003 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,005 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,139 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,140 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,140 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,140 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,141 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,141 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,141 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,141 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,142 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,142 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,142 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,144 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,145 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,145 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,146 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,146 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,146 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,150 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,150 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,151 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,151 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,155 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,156 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,156 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,288 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,292 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,292 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,292 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,293 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,293 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,293 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,293 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,294 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,294 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,295 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,295 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,295 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,298 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,299 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,299 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,299 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,300 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,305 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,305 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,305 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,306 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,306 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,306 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,445 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,446 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,446 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,450 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,451 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,451 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,451 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,451 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,452 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,452 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,453 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,453 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,454 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,454 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,455 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,456 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,457 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,457 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,476 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,476 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,477 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,478 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,478 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,478 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,658 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,659 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,659 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,659 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,660 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,660 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,660 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,661 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,661 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,661 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,661 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,662 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,671 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,672 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,672 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,677 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,678 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,678 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,680 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,680 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,680 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,683 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,684 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,684 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,790 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,790 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,790 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,790 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,791 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,791 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,791 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,791 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,792 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,792 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,792 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,792 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,793 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,794 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,795 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,795 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,795 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,795 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,796 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,796 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,796 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,797 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,797 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,797 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:16,979 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:16,979 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:16,979 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:16,979 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:16,980 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:16,980 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:16,980 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:16,980 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:16,980 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:16,981 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:16,981 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:16,981 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:16,983 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,983 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,983 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,983 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,984 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,984 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,984 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,984 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:16,985 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,985 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:16,985 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:16,985 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:24,303 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:24,304 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:24,304 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:24,305 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:24,305 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:24,305 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:24,306 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:24,307 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:24,307 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:24,307 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:24,308 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:24,308 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:24,309 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,309 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,310 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,311 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,311 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,311 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,312 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,312 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,312 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,312 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,313 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:24,313 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:24,419 [main] INFO  ExcelUtils:48 - RightEyeSphere
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - RightEyeCylinder
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - inputRightEyeAxis
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - RightEyePD
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - RightEyeOC
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - LeftEyeSphere
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - LeftEyeCylinder
+2017-08-11 13:55:24,420 [main] INFO  ExcelUtils:48 - inputLeftEyeAxis
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - LeftEyePD
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - LeftEyeOC
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - PatientFName
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - PatientLName
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,421 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,422 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,422 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,422 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,422 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,422 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,423 [main] INFO  ExcelUtils:48 - 2
+2017-08-11 13:55:24,423 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,423 [main] INFO  ExcelUtils:48 - 20
+2017-08-11 13:55:24,423 [main] INFO  ExcelUtils:48 - PatF
+2017-08-11 13:55:24,423 [main] INFO  ExcelUtils:48 - PatL
+2017-08-11 13:55:27,200 [main] INFO  ExcelUtils:83 - /mymaui/pdp?productCode=MM743
+2017-08-11 13:55:27,227 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:55:27,227 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:55:27,228 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,228 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,228 [main] INFO  ExcelUtils:83 - /
+2017-08-11 13:55:27,228 [main] INFO  ExcelUtils:83 - Open Home
+2017-08-11 13:55:27,228 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:55:27,229 [main] INFO  ExcelUtils:83 - open
+2017-08-11 13:55:27,229 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,229 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,229 [main] INFO  ExcelUtils:83 - #PdpUrl
+2017-08-11 13:55:27,230 [main] INFO  ExcelUtils:83 - Navigate to PDP
+2017-08-11 13:55:27,230 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:55:27,230 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:55:27,230 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:27,231 [main] INFO  ExcelUtils:83 - //input[@value='Add To Cart']
+2017-08-11 13:55:27,231 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,232 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:55:27,232 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:55:27,233 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:55:27,234 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,234 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:27,234 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:55:27,235 [main] INFO  ExcelUtils:83 - AddToCart
+2017-08-11 13:55:28,772 [main] INFO  ExcelUtils:48 - PdpUrl
+2017-08-11 13:55:28,773 [main] INFO  ExcelUtils:48 - /mymaui/pdp?productCode=MM743
+2017-08-11 13:55:33,882 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:55:33,883 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:55:33,883 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:33,883 [main] INFO  ExcelUtils:83 - //li[@id='holderMiniCart']/a/span[2]
+2017-08-11 13:55:33,883 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,883 [main] INFO  ExcelUtils:83 - Navigate to Cart
+2017-08-11 13:55:33,884 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:55:33,884 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:55:33,885 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,885 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,885 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:55:33,885 [main] INFO  ExcelUtils:83 - Navigate to Cart
+2017-08-11 13:55:33,885 [main] INFO  ExcelUtils:83 - 3
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - type
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - id
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - inputPurchaseOrderNumber
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - This is a test order
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - Cart Page - PO
+2017-08-11 13:55:33,886 [main] INFO  ExcelUtils:83 - 4
+2017-08-11 13:55:33,887 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:55:33,887 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:33,887 [main] INFO  ExcelUtils:83 - (//button[@type='submit'])[2]
+2017-08-11 13:55:33,887 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,887 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:55:33,888 [main] INFO  ExcelUtils:83 - 5
+2017-08-11 13:55:33,888 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:55:33,888 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,888 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,888 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 - 6
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 - //button[@type='submit']
+2017-08-11 13:55:33,889 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,890 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:55:33,890 [main] INFO  ExcelUtils:83 - 7
+2017-08-11 13:55:33,890 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:55:33,890 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,890 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - 8
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - assertText
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:33,891 [main] INFO  ExcelUtils:83 - //div[@id='pageContent']/div/div[2]/div/div/h5
+2017-08-11 13:55:33,892 [main] INFO  ExcelUtils:83 - YOUR RECEIPT
+2017-08-11 13:55:33,892 [main] INFO  ExcelUtils:83 - Checkout
+2017-08-11 13:55:52,287 [main] INFO  ExcelUtils:83 - 1
+2017-08-11 13:55:52,287 [main] INFO  ExcelUtils:83 - click
+2017-08-11 13:55:52,287 [main] INFO  ExcelUtils:83 - xpath
+2017-08-11 13:55:52,287 [main] INFO  ExcelUtils:83 - //a[contains(@href, '/mauijimb2bstorefront/logout')]
+2017-08-11 13:55:52,287 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:52,288 [main] INFO  ExcelUtils:83 - Logout
+2017-08-11 13:55:52,288 [main] INFO  ExcelUtils:83 - 2
+2017-08-11 13:55:52,288 [main] INFO  ExcelUtils:83 - pause
+2017-08-11 13:55:52,288 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:52,288 [main] INFO  ExcelUtils:83 -  
+2017-08-11 13:55:52,289 [main] INFO  ExcelUtils:83 - 3000
+2017-08-11 13:55:52,289 [main] INFO  ExcelUtils:83 - Logout
+2017-08-11 13:55:56,764 [main] DEBUG BaseSetup:87 - executing tear down 

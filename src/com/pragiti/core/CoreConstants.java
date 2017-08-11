@@ -9,9 +9,9 @@ public final class CoreConstants
 	public static final String EXTENSIONNAME = "B2CATA";
 
 	public static final String HOMEDIRECTORY = System.getProperty("user.dir");
-	public static final String DRIVERPATH = HOMEDIRECTORY +"\\resources\\drivers\\";
-	public static final String TestDataPath = HOMEDIRECTORY +"\\resources\\testData\\";
-	public static final String AUTOSCRIPTPATH = HOMEDIRECTORY +"\\resources\\autoITSript\\";
+	public static final String DRIVERPATH = HOMEDIRECTORY +"/resources/drivers/";
+	public static final String TestDataPath = HOMEDIRECTORY +"/resources/testData/";
+	public static final String AUTOSCRIPTPATH = HOMEDIRECTORY +"/resources/autoITSript/";
 
 	
 	public static final String HandleAuthenticationScript = "HandleAuthentication.exe";
@@ -27,7 +27,7 @@ public final class CoreConstants
 	public static final String LoggedInUserCheckoutDataFile="Logged-in-user-checkout.xlsx";
 	
 	//Reporting
-	public static final String TESTREPORTPATH = HOMEDIRECTORY+"\\Reports\\";
+	public static final String TESTREPORTPATH = HOMEDIRECTORY+"/Reports/";
 	public static final String ExtentReports = "ExecutionReport";
 	public static final String REPORTENCODING = "utf-8";
 	
