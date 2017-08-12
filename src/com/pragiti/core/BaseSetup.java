@@ -27,9 +27,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public abstract class BaseSetup {
 
-	  private static final Logger LOG = LogManager.getLogger(com.pragiti.core.BaseSetup.class);
-
-	//protected static final Logger LOG = Logger.getLogger(BaseSetup.class);
+	private static final Logger LOG = LogManager.getLogger();
 	private static String appUrl;
 	private static WebDriver driver;
 	public static ExtentReports extent;
@@ -172,7 +170,7 @@ public abstract class BaseSetup {
 	}
 
 	protected static WebDriver initChromeDriver(String appURL) {
-		LOG.error("Launching google chrome with new profile..");
+		LOG.info("Launching google chrome with new profile..");
 		//System.getProperties().list(System.out);
 		
 		DesiredCapabilities capability = DesiredCapabilities.chrome();

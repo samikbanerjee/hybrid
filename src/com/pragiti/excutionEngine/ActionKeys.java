@@ -68,12 +68,12 @@ public class ActionKeys {
 		actions.perform();
 	}
 	
-	  public void clickback(){
+	 public void clickback(){
 		  dr.navigate().back();
 		  
 	  }
 	  
-	 public void scrolldown(String elementIdentifier, String elementIdentifierValue){
+	public void scrolldown(String elementIdentifier, String elementIdentifierValue){
 		 ((JavascriptExecutor)dr).executeScript("arguments[0].scrollIntoView();",findElement(elementIdentifier, elementIdentifierValue));
 	 }
   

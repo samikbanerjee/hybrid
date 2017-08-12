@@ -6,7 +6,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-//import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
@@ -16,13 +15,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
-	private static final Logger LOG = LogManager.getLogger(ExcelUtils.class);
-	//private static final Logger LOG = Logger.getLogger(ExcelUtils.class);
+	private static final Logger LOG = LogManager.getLogger();
 	private static XSSFSheet excelWSheet;
 	private static XSSFWorkbook excelWBook;
 	private static XSSFCell cell;
 	private static XSSFRow row;
-
+	
 	public static Object[][] getTableArray(String filePath, String sheetName)
 			throws Exception {
 		String[][] tabArray = null;
@@ -45,7 +43,6 @@ public class ExcelUtils {
 				cj = 0;
 				for (int j = startCol; j <= (totalCols - 1); j++, cj++) {
 					tabArray[ci][cj] = getCellData(i, j);
-					LOG.info(tabArray[ci][cj]);
 				}
 			}
 		}
@@ -80,7 +77,6 @@ public class ExcelUtils {
 				cj = 0;
 				for (int j = startCol; j <= (totalCols - 1); j++, cj++) {
 					tabArray[ci][cj] = getCellData(i, j);
-					LOG.info(tabArray[ci][cj]);
 				}
 			}
 		}

@@ -67,7 +67,7 @@ public class UIExecutor extends BaseSetup {
 			else if (step.getInputValue()=="") {
 				sData="";
 			}
-			else if (step.getInputValue().startsWith("#")) {
+			else if (step.getInputValue().startsWith(CoreConstants.TESTDATA_NOTATION)) {
 				String matchVal=step.getInputValue().substring(1);
 				sData=sD[getTestDataIndex(matchVal)];
 			}
@@ -75,7 +75,7 @@ public class UIExecutor extends BaseSetup {
 				sData=step.getInputValue();
 			}
 			
-			if(step.getElementIdentifierValue().equalsIgnoreCase("#getFromInputValue")==true){
+			if(step.getElementIdentifierValue().equalsIgnoreCase(CoreConstants.GET_FROM_TEST_DATA)==true){
 				step.setElementIdentifierValue(sData);
 			}
 			
@@ -83,7 +83,7 @@ public class UIExecutor extends BaseSetup {
 				acts.executeAction(applUrl, step.getKeyWord(), step.getElementIdentifier(), step.getElementIdentifierValue(), 
 						sData, step.getDescription());
 				
-				test.pass("Executing step: "+step.getTestCaseId()+"; "+step.getKeyWord()+"->"+
+				test.pass("Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
 				step.getElementIdentifier()+" = "+step.getElementIdentifierValue()+" / "+sData);
 				
 		}

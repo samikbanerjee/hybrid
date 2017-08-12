@@ -5,11 +5,9 @@ import java.io.InputStream;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-//import org.apache.log4j.Logger;
 
 public class B2CATAConfig {
-	//protected static final Logger LOG = Logger.getLogger(B2CATAConfig.class);
-	protected static final Logger LOG = LogManager.getLogger(B2CATAConfig.class);
+	protected static final Logger LOG = LogManager.getLogger();
 	static String propFileName = "config/local.properties";
 	static InputStream inputStream;
 	static Properties prop = new Properties();
