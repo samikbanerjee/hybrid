@@ -33,30 +33,22 @@ public abstract class BaseSetup {
 	public static ExtentReports extent;
 	private String testCase;
 	private String testData;
-
+	private static String suiteName;
 	// Selenium URI -- static same for everyone.
 	public static String seleniumURI = null;
-
 	public abstract void setUp();
 	
-	
-
-	@BeforeSuite
-	public void setupSuite(ITestContext ctx) {
-		// get the uri to send the commands to.
-		seleniumURI = SauceHelpers.buildSauceUri();
-
-		// extent reports
-		extent = new ExtentReports();
-		ExtentHtmlReporter reporter = this.genHtmlExtReporter(ctx.getSuite().getName());
-		extent.attachReporter(reporter);
-
-	}
-
 	@Parameters({ "browserType", "appURL" })
 	@BeforeSuite(alwaysRun = true)
-	public void initializeTestBaseSetup(String browserType, String appURL) {
+	public void initializeTestBaseSetup(String browserType, String appURL, ITestContext ctx) {
+		
 		try {
+			seleniumURI = SauceHelpers.buildSauceUri();
+			suiteName  = ctx.getSuite().getName();
+			// extent reports
+			extent = new ExtentReports();
+			ExtentHtmlReporter reporter = this.genHtmlExtReporter(ctx.getSuite().getName());
+			extent.attachReporter(reporter);
 			setDriver(browserType, appURL);
 			setAppUrl(appURL);
 		} catch (Exception e) {
@@ -97,7 +89,7 @@ public abstract class BaseSetup {
 	 * 
 	 */
 	private void setDriver(String browserType, String appURL) throws MalformedURLException {
-
+		String[] s;
 		switch (browserType) {
 		case "chrome":
 			driver = initChromeDriver(appURL);
@@ -108,8 +100,12 @@ public abstract class BaseSetup {
 		case "IE":
 			driver = initIEDriver(appURL);
 			break;
-		case "saucelabs":
-			driver = initSaucelabsSetup(appURL);
+		case "saucelabsMacSafari":
+			s=B2CATAConfig.getString("sauce.config.mac.safari").split(",");
+			driver = initSaucelabsSetup(appURL, s[1], s[0], s[2], s[3] );
+		case "saucelabsWindowsFirefox":
+			s=B2CATAConfig.getString("sauce.config.windows.firefox").split(",");
+			driver = initSaucelabsSetup(appURL, s[1], s[0], s[2], s[3] );
 			break;
 		default:
 			LOG.info("browser : " + browserType + " is invalid, Launching Firefox as browser of choice..");
@@ -123,6 +119,8 @@ public abstract class BaseSetup {
 	 * and which is configured to run against ondemand.saucelabs.com, using the
 	 * username and access key populated by the {@link #authentication}
 	 * instance.
+	 * @param browserName 
+	 * @param os 
 	 *
 	 * @param browser
 	 *            Represents the browser to be used as part of the test run.
@@ -132,6 +130,8 @@ public abstract class BaseSetup {
 	 * @param os
 	 *            Represents the operating system to be used as part of the test
 	 *            run.
+	 * @param browserVersion 
+	 * @param screenResolution 
 	 * @param methodName
 	 *            Represents the name of the test case that will be used to
 	 *            identify the test on Sauce.
@@ -139,25 +139,18 @@ public abstract class BaseSetup {
 	 * @throws MalformedURLException
 	 *             if an error occurs parsing the url
 	 */
-	private WebDriver initSaucelabsSetup(String appURL) throws MalformedURLException {
-		// TODO: use data provide excel
+	private WebDriver initSaucelabsSetup(String appURL, String browserName, String os, String browserVersion, String screenResolution) throws MalformedURLException {
+		// TODO: Parallel
 		final DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(CapabilityType.BROWSER_NAME, "firefox");
-		caps.setCapability(CapabilityType.PLATFORM, "Windows 10");
-		caps.setCapability(CapabilityType.VERSION, "44.0");
-		caps.setCapability("screenResolution", "1280x1024");
-		caps.setCapability("build", "MJB2CUSSmokeTestCases 04-13-2016 Samik Test"); 
+		
+		
+		caps.setCapability(CapabilityType.BROWSER_NAME, browserName );
+		caps.setCapability(CapabilityType.PLATFORM, os); 
+		caps.setCapability(CapabilityType.VERSION, browserVersion);
+		caps.setCapability("screenResolution", screenResolution); 
+		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
 		caps.setCapability("acceptSslCerts", true);
-
-		SauceHelpers.addSauceConnectTunnelId(caps);
-
-		// caps.setCapability("tunnel-identifier", "MJConnection"); //not
-		// required for publicly accessible URL i.e. for our OOB acc.
-		// URL= ondemand.saucelabs.com:80
-		// return new RemoteWebDriver(new java.net.URL("http://" +
-		// B2CATAConfig.getString("authentication.saucelabs.username") + ":"+
-		// B2CATAConfig.getString("authentication.saucelabs.password") +
-		// appURL), caps);
+		caps.setCapability("tunnel-identifier", "mj63"); 
 		seleniumURI = SauceHelpers.buildSauceUri();
 		WebDriver driver = new RemoteWebDriver(
 				new URL("http://" + B2CATAConfig.getString("authentication.saucelabs.username") + ":"
@@ -166,12 +159,14 @@ public abstract class BaseSetup {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
+
+		
 		return driver;
 	}
 
 	protected static WebDriver initChromeDriver(String appURL) {
 		LOG.info("Launching google chrome with new profile..");
-		//System.getProperties().list(System.out);
+
 		
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		// To Accept SSL certificate

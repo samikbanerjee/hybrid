@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Maui Jim B2B Checkout Execution Suite">
+<suite name="Maui Jim B2B Checkout Execution Suite On Win FF">
 
 	
 	<parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront" />
-	<parameter name="browserType" value="firefox" />
+	<parameter name="browserType" value="saucelabsWindowsFirefox"/>
 
 	<test name="Login To Checkout">
 		<parameter name="testCase" value="MJ_B2B_Login.xlsx"/>

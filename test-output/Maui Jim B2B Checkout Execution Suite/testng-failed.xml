@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2B Checkout Execution Suite]">
   <parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront"/>
-  <parameter name="browserType" value="firefox"/>
+  <parameter name="browserType" value="saucelabs"/>
   <test name="Login To Checkout(failed)">
     <parameter name="testData" value="MJ_B2B_Login.xlsx"/>
     <parameter name="testCase" value="MJ_B2B_Login.xlsx"/>

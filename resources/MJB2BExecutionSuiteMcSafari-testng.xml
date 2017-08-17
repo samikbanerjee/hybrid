@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maui Jim B2B Checkout Execution Suite on Mac Safari">
+
+	
+	<parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront" />
+	<parameter name="browserType" value="saucelabsMacSafari"/>
+
+	<test name="Login To Checkout">
+		<parameter name="testCase" value="MJ_B2B_Login.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_Login.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	<test name="Add Plano (and Reader) To Cart">
+		<parameter name="testCase" value="MJ_B2B_PlanoATC.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_PlanoATC.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	
+	
+	<test name="Add Opthalmic To Cart">
+		<parameter name="testCase" value="MJ_B2B_OpthalmicATC.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_OpthalmicATC.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	
+	
+	<test name="Add MyMaui To Cart">
+		<parameter name="testCase" value="MJ_B2B_MMAtc.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_MMAtc.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	<test name="Place Order">
+		<parameter name="testCase" value="MJ_B2B_PlaceOrder.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_PlaceOrder.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	
+	<test name="Logout of Site">
+		<parameter name="testCase" value="MJ_B2B_Logout.xlsx"/>
+		<parameter name="testData" value="MJ_B2B_Logout.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+	
+	
+</suite>

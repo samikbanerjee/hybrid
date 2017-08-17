@@ -9,12 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.aventstack.extentreports.ExtentTest;
 
 public class ActionKeys {
 	
-	public static ExtentTest test;
 	private static final int TIMEOUT_IN_SECONDS = 20;
+	private static final int DEFAULT_PAUSE=3000;
 	private WebDriver dr;
 	
 	public ActionKeys(WebDriver driver) {
@@ -45,10 +44,12 @@ public class ActionKeys {
 		case "assertText": this.assertText(elementIdentifier, elementIdentifierValue, inputVal);
 			break;
 		case "clickback": this.clickback();
-		break;
+			break;
 		case "scrolldown" : this.scrolldown(elementIdentifier, elementIdentifierValue);
+			break;
+		case "clickAndWait" : this.clickAndWait(elementIdentifier, elementIdentifierValue);
 		break;
-	
+
 		default:
 			break;
 		}
@@ -56,6 +57,12 @@ public class ActionKeys {
 	}
 	
 	
+	public void clickAndWait(String elementIdentifier, String elementIdentifierValue) throws InterruptedException {
+		click(elementIdentifier, elementIdentifierValue);
+		Thread.sleep(DEFAULT_PAUSE);	
+	}
+
+
 	public void assertText(String elementIdentifier, String elementIdentifierValue, String inputVal){
 		WebElement el=findElement(elementIdentifier, elementIdentifierValue);
 		org.testng.Assert.assertEquals(el.getText(), inputVal);
