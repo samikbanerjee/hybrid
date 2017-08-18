@@ -102,10 +102,10 @@ public abstract class BaseSetup {
 			break;
 		case "saucelabsMacSafari":
 			s=B2CATAConfig.getString("sauce.config.mac.safari").split(",");
-			driver = initSaucelabsSetup(appURL, s[1], s[0], s[2], s[3] );
+			driver = initSaucelabsSetup(appURL, s[0], s[1], s[2], s[3] );
 		case "saucelabsWindowsFirefox":
 			s=B2CATAConfig.getString("sauce.config.windows.firefox").split(",");
-			driver = initSaucelabsSetup(appURL, s[1], s[0], s[2], s[3] );
+			driver = initSaucelabsSetup(appURL, s[0], s[1], s[2], s[3] );
 			break;
 		default:
 			LOG.info("browser : " + browserType + " is invalid, Launching Firefox as browser of choice..");
@@ -139,7 +139,7 @@ public abstract class BaseSetup {
 	 * @throws MalformedURLException
 	 *             if an error occurs parsing the url
 	 */
-	private WebDriver initSaucelabsSetup(String appURL, String browserName, String os, String browserVersion, String screenResolution) throws MalformedURLException {
+	private WebDriver initSaucelabsSetup(String appURL, String os, String browserName,  String browserVersion, String screenResolution) throws MalformedURLException {
 		// TODO: Parallel
 		final DesiredCapabilities caps = new DesiredCapabilities();
 		

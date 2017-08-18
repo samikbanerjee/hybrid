@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2B Checkout Execution Suite on Mac Safari]">
+  <parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront"/>
+  <parameter name="browserType" value="saucelabsMacSafari"/>
+  <test name="Place Order(failed)">
+    <parameter name="testData" value="MJ_B2B_PlaceOrder.xlsx"/>
+    <parameter name="testCase" value="MJ_B2B_PlaceOrder.xlsx"/>
+    <classes>
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initiaLizeTest"/>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </classes>
+  </test> <!-- Place Order(failed) -->
+</suite> <!-- Failed suite [Maui Jim B2B Checkout Execution Suite on Mac Safari] -->
