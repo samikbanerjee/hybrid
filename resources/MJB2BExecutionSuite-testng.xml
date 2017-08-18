@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Maui Jim B2B Checkout Execution Suite On Win FF">
+<suite name="Maui Jim B2B Checkout Execution Suite">
 
 	
 	<parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront" />
