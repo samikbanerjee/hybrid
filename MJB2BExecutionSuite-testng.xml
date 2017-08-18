@@ -18,7 +18,7 @@
 	</test>
 	
 	
-	
+<!-- 	
 	<test name="Add Opthalmic To Cart">
 		<parameter name="testCase" value="MJ_B2B_OpthalmicATC.xlsx"/>
 		<parameter name="testData" value="MJ_B2B_OpthalmicATC.xlsx"/>
@@ -32,6 +32,7 @@
 		<parameter name="testData" value="MJ_B2B_MMAtc.xlsx"/>
 		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
+ -->
 	
 	<test name="Place Order">
 		<parameter name="testCase" value="MJ_B2B_PlaceOrder.xlsx"/>

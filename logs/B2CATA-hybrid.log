@@ -7,3 +7,5 @@
 2017-08-14 15:26:54,090 [main] ERROR BaseSetup:67 - Error.....nulljava.lang.NullPointerException
 2017-08-14 15:29:58,631 [main] ERROR BaseSetup:67 - Error.....nulljava.lang.NullPointerException
 2017-08-14 15:30:20,460 [main] ERROR BaseSetup:67 - Error.....nulljava.lang.NullPointerException
+2017-08-18 16:05:27,242 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-18 16:07:49,521 [main] INFO  BaseSetup:211 - Launching Firefox browser..

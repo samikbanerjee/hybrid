@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Maui Jim B2B Checkout Execution Suite" duration-ms="49460" started-at="2017-08-18T23:07:59Z" finished-at="2017-08-18T23:08:48Z">
+    <groups>
+    </groups>
+    <test name="Login To Checkout" duration-ms="7625" started-at="2017-08-18T23:07:59Z" finished-at="2017-08-18T23:08:06Z">
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <test-method status="PASS" signature="initiaLizeTest(java.lang.String, java.lang.String)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf]" name="initiaLizeTest" is-config="true" duration-ms="1" started-at="2017-08-18T16:07:59Z" finished-at="2017-08-18T16:07:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MJ_B2B_Login.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MJ_B2B_Login.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiaLizeTest -->
+        <test-method status="PASS" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf]" name="setUpTest" is-config="true" duration-ms="0" started-at="2017-08-18T16:07:59Z" depends-on-methods="com.pragiti.core.BaseSetup.initiaLizeTest" finished-at="2017-08-18T16:07:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1917d90f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf]" name="setUp" is-config="true" duration-ms="0" started-at="2017-08-18T16:07:59Z" finished-at="2017-08-18T16:07:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf]" name="execute" duration-ms="6674" started-at="2017-08-18T16:07:59Z" data-provider="uiexecxlsx" finished-at="2017-08-18T16:08:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7f4037ed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf]" name="afterMethod" is-config="true" duration-ms="392" started-at="2017-08-18T16:08:06Z" finished-at="2017-08-18T16:08:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=execute status=SUCCESS method=UIExecutor.execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@3754a4bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </test> <!-- Login To Checkout -->
+    <test name="Add Plano (and Reader) To Cart" duration-ms="17221" started-at="2017-08-18T23:08:06Z" finished-at="2017-08-18T23:08:23Z">
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <test-method status="PASS" signature="initiaLizeTest(java.lang.String, java.lang.String)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="initiaLizeTest" is-config="true" duration-ms="1" started-at="2017-08-18T16:08:06Z" finished-at="2017-08-18T16:08:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MJ_B2B_PlanoATC.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MJ_B2B_PlanoATC.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiaLizeTest -->
+        <test-method status="PASS" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="setUpTest" is-config="true" duration-ms="1" started-at="2017-08-18T16:08:06Z" depends-on-methods="com.pragiti.core.BaseSetup.initiaLizeTest" finished-at="2017-08-18T16:08:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@66bfd864]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="setUp" is-config="true" duration-ms="0" started-at="2017-08-18T16:08:06Z" finished-at="2017-08-18T16:08:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="execute" duration-ms="9418" started-at="2017-08-18T16:08:06Z" data-provider="uiexecxlsx" finished-at="2017-08-18T16:08:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@54534abf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="afterMethod" is-config="true" duration-ms="72" started-at="2017-08-18T16:08:16Z" finished-at="2017-08-18T16:08:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=execute status=SUCCESS method=UIExecutor.execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="execute" duration-ms="7611" started-at="2017-08-18T16:08:16Z" data-provider="uiexecxlsx" finished-at="2017-08-18T16:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@51745f40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a]" name="afterMethod" is-config="true" duration-ms="71" started-at="2017-08-18T16:08:23Z" finished-at="2017-08-18T16:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=execute status=SUCCESS method=UIExecutor.execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2d1ef81a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </test> <!-- Add Plano (and Reader) To Cart -->
+    <test name="Place Order" duration-ms="20287" started-at="2017-08-18T23:08:23Z" finished-at="2017-08-18T23:08:44Z">
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <test-method status="PASS" signature="initiaLizeTest(java.lang.String, java.lang.String)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f]" name="initiaLizeTest" is-config="true" duration-ms="1" started-at="2017-08-18T16:08:23Z" finished-at="2017-08-18T16:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MJ_B2B_PlaceOrder.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MJ_B2B_PlaceOrder.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiaLizeTest -->
+        <test-method status="PASS" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f]" name="setUpTest" is-config="true" duration-ms="0" started-at="2017-08-18T16:08:23Z" depends-on-methods="com.pragiti.core.BaseSetup.initiaLizeTest" finished-at="2017-08-18T16:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4aac85fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f]" name="setUp" is-config="true" duration-ms="0" started-at="2017-08-18T16:08:23Z" finished-at="2017-08-18T16:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f]" name="execute" duration-ms="20194" started-at="2017-08-18T16:08:23Z" data-provider="uiexecxlsx" finished-at="2017-08-18T16:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@143d9a93]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f]" name="afterMethod" is-config="true" duration-ms="46" started-at="2017-08-18T16:08:44Z" finished-at="2017-08-18T16:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=execute status=SUCCESS method=UIExecutor.execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </test> <!-- Place Order -->
+    <test name="Logout of Site" duration-ms="4298" started-at="2017-08-18T23:08:44Z" finished-at="2017-08-18T23:08:48Z">
+      <class name="com.pragiti.excutionEngine.UIExecutor">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="initializeTestBaseSetup" is-config="true" duration-ms="9735" started-at="2017-08-18T16:07:49Z" finished-at="2017-08-18T16:07:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://usmauijimb2b.stg/mauijimb2bstorefront]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fe88a09]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="setUpTest" is-config="true" duration-ms="1" started-at="2017-08-18T16:08:44Z" depends-on-methods="com.pragiti.core.BaseSetup.initiaLizeTest" finished-at="2017-08-18T16:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fe88a09]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="initiaLizeTest(java.lang.String, java.lang.String)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="initiaLizeTest" is-config="true" duration-ms="0" started-at="2017-08-18T16:08:44Z" finished-at="2017-08-18T16:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MJ_B2B_Logout.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MJ_B2B_Logout.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiaLizeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="setUp" is-config="true" duration-ms="0" started-at="2017-08-18T16:08:44Z" finished-at="2017-08-18T16:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="execute" duration-ms="4232" started-at="2017-08-18T16:08:44Z" data-provider="uiexecxlsx" finished-at="2017-08-18T16:08:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2e1792e7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="afterMethod" is-config="true" duration-ms="47" started-at="2017-08-18T16:08:48Z" finished-at="2017-08-18T16:08:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=execute status=SUCCESS method=UIExecutor.execute([Ljava.lang.String;)[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pragiti.excutionEngine.UIExecutor@2f4948e4]" name="tearDown" is-config="true" duration-ms="1333" started-at="2017-08-18T16:08:48Z" finished-at="2017-08-18T16:08:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
+    </test> <!-- Logout of Site -->
+  </suite> <!-- Maui Jim B2B Checkout Execution Suite -->
+</testng-results>
