@@ -3,7 +3,7 @@
 
 	
 	<parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront" />
-	<parameter name="browserType" value=${BROWSER_TYPE}/>
+	<parameter name="browserType" value="${BROWSER_TYPE}"/>
 
 	<test name="Login To Checkout">
 		<parameter name="testCase" value="MJ_B2B_Login.xlsx"/>
