@@ -107,6 +107,9 @@ public abstract class BaseSetup {
 			s=B2CATAConfig.getString("sauce.config.windows.firefox").split(",");
 			driver = initSaucelabsSetup(appURL, s[0], s[1], s[2], s[3] );
 			break;
+		case "saucelabs":
+			driver = initSaucelabsJenkinsSetup(appURL);
+			break;
 		default:
 			LOG.info("browser : " + browserType + " is invalid, Launching Firefox as browser of choice..");
 			driver = initFirefoxDriver(appURL);
@@ -155,6 +158,29 @@ public abstract class BaseSetup {
 		WebDriver driver = new RemoteWebDriver(
 				new URL("http://" + B2CATAConfig.getString("authentication.saucelabs.username") + ":"
 						+ B2CATAConfig.getString("authentication.saucelabs.password") + seleniumURI + "/wd/hub"),
+				caps);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.navigate().to(appURL);
+
+		
+		return driver;
+	}
+	
+	private WebDriver initSaucelabsJenkinsSetup(String appURL) throws MalformedURLException
+	{
+		final DesiredCapabilities caps = new DesiredCapabilities();
+	
+		caps.setBrowserName(System.getenv("SELENIUM_BROWSER"));
+		caps.setVersion(System.getenv("SELENIUM_VERSION"));
+		caps.setCapability(CapabilityType.PLATFORM, System.getenv("SELENIUM_PLATFORM"));
+		
+		caps.setCapability("acceptSslCerts", true);
+		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
+		
+		seleniumURI = SauceHelpers.buildSauceUri();
+		WebDriver driver = new RemoteWebDriver(
+				new URL("http://" + System.getenv("SAUCE_USERNAME") + ":" + System.getenv("SAUCE_ACCESS_KEY") + seleniumURI + "/wd/hub"),
 				caps);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
