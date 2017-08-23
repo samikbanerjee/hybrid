@@ -27,7 +27,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public abstract class BaseSetup {
 
-	private static final Logger LOG = LogManager.getLogger();
+	public static final Logger LOG = LogManager.getLogger();
 	private static String appUrl;
 	private static WebDriver driver;
 	public static ExtentReports extent;

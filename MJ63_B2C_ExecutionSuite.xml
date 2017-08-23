@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maui Jim B2B Checkout Execution Suite">
+
+	
+	<parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US" />
+	<parameter name="browserType" value="firefox"/>
+
+	<test name="Guest Checkout">
+		<parameter name="testCase" value="MJ63_B2C_GuestCheckout.xlsx"/>
+		<parameter name="testData" value="MJ63_B2C_GuestCheckout.xlsx"/>
+		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
+	</test>
+
+	
+	
+</suite>

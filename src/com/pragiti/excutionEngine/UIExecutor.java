@@ -85,6 +85,8 @@ public class UIExecutor extends BaseSetup {
 				
 				test.pass("Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
 				step.getElementIdentifier()+" = "+step.getElementIdentifierValue()+" / "+sData);
+				LOG.info("Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
+						step.getElementIdentifier()+" = "+step.getElementIdentifierValue()+" / "+sData);
 				
 		}
 		
@@ -96,12 +98,14 @@ public class UIExecutor extends BaseSetup {
     	{
     		String screenShotPath = this.captureScreenshot(driver, testName);
 			test.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
+			LOG.error(result.getThrowable());
     	}
         else if (result.getStatus() == ITestResult.SKIP)
         {
         	
         	String screenShotPath = this.captureScreenshot(driver, testName);
 			test.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
+			LOG.error(result.getThrowable());
     	}
         else
             test.pass("Test passed");

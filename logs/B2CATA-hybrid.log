@@ -9,3 +9,150 @@
 2017-08-14 15:30:20,460 [main] ERROR BaseSetup:67 - Error.....nulljava.lang.NullPointerException
 2017-08-18 16:05:27,242 [main] INFO  BaseSetup:211 - Launching Firefox browser..
 2017-08-18 16:07:49,521 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 12:57:00,480 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 12:58:24,193 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 12:59:15,602 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 13:02:21,547 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 14:25:47,016 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 14:31:01 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 14:31:06 [main] ERROR BaseSetup:55 - Error.....Failed to decode response from marionette
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.45', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.LXr7tTOv3Osq, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=54.0.1, platformVersion=10.0, moz:processID=3400.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 1ec579e7-8b4f-4e4b-a0be-4be5e1d6805borg.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.45', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.LXr7tTOv3Osq, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=54.0.1, platformVersion=10.0, moz:processID=3400.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 1ec579e7-8b4f-4e4b-a0be-4be5e1d6805b
+2017-08-22 15:00:20 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 15:00:35 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-22 15:00:40 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-22 15:00:43 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:00:43 [main] INFO  BaseSetup:88 - Executing step: 3; ; click->xpath = (.//*[@id='addToCartForm']//a)[2] / 
+2017-08-22 15:00:46 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:00:50 [main] INFO  BaseSetup:88 - Executing step: 4; ; open-> =  / /
+2017-08-22 15:00:50 [main] INFO  BaseSetup:88 - Executing step: 5; ; click->xpath = //button/span[contains(text(),'Cart')] / 
+2017-08-22 15:01:21 [main] ERROR BaseSetup:101 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: checkoutButton (tried for 20 second(s) with 500 MILLISECONDS interval)
+2017-08-22 15:03:20 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 15:03:33 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-22 15:03:36 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-22 15:03:39 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:03:39 [main] INFO  BaseSetup:88 - Executing step: 3; ; click->xpath = .//*[@id='addToCartForm']/div[2]/a / 
+2017-08-22 15:03:42 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:03:46 [main] INFO  BaseSetup:88 - Executing step: 4; ; open-> =  / /
+2017-08-22 15:03:46 [main] INFO  BaseSetup:88 - Executing step: 5; ; click->xpath = //button/span[contains(text(),'Cart')] / 
+2017-08-22 15:08:18 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-22 15:08:32 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-22 15:08:35 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-22 15:08:38 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:08:38 [main] ERROR BaseSetup:101 - org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (1044.5, 788.3499755859375) is out of bounds of viewport width (1366) and height (659)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.45', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Samik\AppData\Local\Temp\rust_mozprofile.X97cHTSZavvW, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=54.0.1, platformVersion=10.0, moz:processID=15660.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 252b906d-feb5-4b74-aa7f-44aa4931e967
+2017-08-22 15:09:07 [main] INFO  BaseSetup:168 - Launching google chrome with new profile..
+2017-08-22 15:09:22 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-22 15:09:26 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-22 15:09:29 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:09:29 [main] INFO  BaseSetup:88 - Executing step: 3; ; moveToElement->xpath = .//*[@id='addToCartForm']/div[2]/a / 
+2017-08-22 15:09:30 [main] ERROR BaseSetup:101 - org.openqa.selenium.WebDriverException: unknown error: Element <a class="button button--primary pdp-add-to-cart product-price__add-button" href="#">...</a> is not clickable at point (1044, 598). Other element would receive the click: <p class="product-compare__amount">...</p>
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 114 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.45', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Samik\AppData\Local\Temp\scoped_dir17412_24340}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.101, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b397e7cf6a9f8822d42934c584b311e2
+2017-08-22 15:09:52 [main] INFO  BaseSetup:168 - Launching google chrome with new profile..
+2017-08-22 15:10:04 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-22 15:10:07 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-22 15:10:10 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-22 15:10:11 [main] ERROR BaseSetup:101 - org.openqa.selenium.WebDriverException: unknown error: Element <a class="button button--primary pdp-add-to-cart product-price__add-button" href="#">...</a> is not clickable at point (1044, 598). Other element would receive the click: <p class="product-compare__amount">...</p>
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.45', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Samik\AppData\Local\Temp\scoped_dir8664_17061}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.101, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e5ec67da75757e05e6300be920488813
+2017-08-23 09:34:01 [main] INFO  BaseSetup:168 - Launching google chrome with new profile..
+2017-08-23 09:34:24 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 09:34:28 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 09:34:31 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 09:35:12 [main] ERROR BaseSetup:101 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: .//*[@id='addToCartForm']/div[2]/a (tried for 20 second(s) with 500 MILLISECONDS interval)
+2017-08-23 09:37:38 [main] INFO  BaseSetup:168 - Launching google chrome with new profile..
+2017-08-23 09:37:54 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 09:37:56 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 09:37:59 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 09:40:02 [main] INFO  BaseSetup:168 - Launching google chrome with new profile..
+2017-08-23 09:40:16 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 09:40:19 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 09:40:22 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 09:40:23 [main] ERROR BaseSetup:101 - org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=60.0.3112.101)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 105 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SAMIK-PC', ip: '10.103.6.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Samik\AppData\Local\Temp\scoped_dir19648_19967}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.101, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2fccad010deb0e53ff9205a883ebb5e8
+2017-08-23 09:53:06 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-23 09:53:20 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 09:53:25 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 09:53:28 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 09:53:29 [main] INFO  BaseSetup:88 - Executing step: 3; ; click->xpath = .//*[@id='addToCartForm']/div[1]/a / 
+2017-08-23 09:53:32 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 09:53:34 [main] INFO  BaseSetup:88 - Executing step: 4; ; open-> =  / /
+2017-08-23 09:53:34 [main] INFO  BaseSetup:88 - Executing step: 5; ; click->xpath = //button/span[contains(text(),'Cart')] / 
+2017-08-23 11:12:30 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-23 11:12:42 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 11:12:45 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 11:12:48 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 11:12:48 [main] INFO  BaseSetup:88 - Executing step: ; ; scrolldown->xpath = .//*[@id='addToCartForm']/div[1]/a / 
+2017-08-23 11:12:48 [main] INFO  BaseSetup:88 - Executing step: 3; ; click->xpath = .//*[@id='addToCartForm']/div[1]/a / 
+2017-08-23 11:12:51 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 11:12:53 [main] INFO  BaseSetup:88 - Executing step: 4; ; open-> =  / /
+2017-08-23 11:12:53 [main] INFO  BaseSetup:88 - Executing step: 5; ; click->xpath = //button/span[contains(text(),'Cart')] / 
+2017-08-23 11:13:29 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-23 11:13:41 [main] INFO  BaseSetup:88 - Executing step: 1; ; open-> =  / /
+2017-08-23 11:13:44 [main] INFO  BaseSetup:88 - Executing step: 2; ; open-> =  / /p/103-02HW
+2017-08-23 11:13:47 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 11:13:47 [main] INFO  BaseSetup:88 - Executing step: ; ; scrolldown->xpath = .//*[@id='addToCartForm']/div[1]/a / 
+2017-08-23 11:13:50 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 11:13:50 [main] INFO  BaseSetup:88 - Executing step: 3; ; click->xpath = .//*[@id='addToCartForm']/div[1]/a / 
+2017-08-23 11:13:53 [main] INFO  BaseSetup:88 - Executing step: ; ; pause-> =  / 3000
+2017-08-23 11:13:54 [main] INFO  BaseSetup:88 - Executing step: 4; ; open-> =  / /
+2017-08-23 11:13:55 [main] INFO  BaseSetup:88 - Executing step: 5; ; click->xpath = //button/span[contains(text(),'Cart')] / 
+2017-08-23 12:34:57 [main] INFO  BaseSetup:211 - Launching Firefox browser..
+2017-08-23 12:35:14 [main] INFO  BaseSetup:88 - Executing step: 1; Open Home; open-> =  / /login
+2017-08-23 12:35:14 [main] INFO  BaseSetup:88 - Executing step: 2; Login; type->id = inputUserId / navedahmed@pragiti.com
+2017-08-23 12:35:14 [main] INFO  BaseSetup:88 - Executing step: 3; Login; type->id = inputPassword / 1234
+2017-08-23 12:35:14 [main] INFO  BaseSetup:88 - Executing step: 4; Login; click->id = checkbox1 / 
+2017-08-23 12:35:15 [main] INFO  BaseSetup:88 - Executing step: 5; Login; click->id = validateUserButton / 
+2017-08-23 12:35:18 [main] INFO  BaseSetup:88 - Executing step: 6; Login; pause-> =  / 3000
+2017-08-23 12:35:23 [main] INFO  BaseSetup:88 - Executing step: 1; Open Home; open-> =  / /
+2017-08-23 12:35:29 [main] INFO  BaseSetup:88 - Executing step: 2; Navigate to PDP; open-> =  / /p/RS717-07
+2017-08-23 12:35:29 [main] INFO  BaseSetup:88 - Executing step: 3; Quantity; type->id = 0.quantity / 1
+2017-08-23 12:35:29 [main] INFO  BaseSetup:88 - Executing step: 4; AddToCart; click->id = addToCartOrderFormButton / 
+2017-08-23 12:35:32 [main] INFO  BaseSetup:88 - Executing step: 5; AddToCart; pause-> =  / 3000
+2017-08-23 12:35:34 [main] INFO  BaseSetup:88 - Executing step: 1; Open Home; open-> =  / /
+2017-08-23 12:35:38 [main] INFO  BaseSetup:88 - Executing step: 2; Navigate to PDP; open-> =  / /r/G807-0215
+2017-08-23 12:35:38 [main] INFO  BaseSetup:88 - Executing step: 3; Quantity; type->id = 0.quantity / 1
+2017-08-23 12:35:38 [main] INFO  BaseSetup:88 - Executing step: 4; AddToCart; click->id = addToCartOrderFormButton / 
+2017-08-23 12:35:41 [main] INFO  BaseSetup:88 - Executing step: 5; AddToCart; pause-> =  / 3000
+2017-08-23 12:35:47 [main] INFO  BaseSetup:88 - Executing step: 1; Navigate to Cart; click->xpath = //li[@id='holderMiniCart']/a/span[2] / 
+2017-08-23 12:35:50 [main] INFO  BaseSetup:88 - Executing step: 2; Navigate to Cart; pause-> =  / 3000
+2017-08-23 12:35:50 [main] INFO  BaseSetup:88 - Executing step: 3; Cart Page - PO; type->id = inputPurchaseOrderNumber / This is a test order
+2017-08-23 12:35:54 [main] INFO  BaseSetup:88 - Executing step: 4; Checkout; click->xpath = (//button[@type='submit'])[2] / 
+2017-08-23 12:35:57 [main] INFO  BaseSetup:88 - Executing step: 5; Checkout; pause-> =  / 3000
+2017-08-23 12:36:04 [main] INFO  BaseSetup:88 - Executing step: 6; Checkout; click->xpath = //button[@type='submit'] / 
+2017-08-23 12:36:07 [main] INFO  BaseSetup:88 - Executing step: 7; Checkout; pause-> =  / 3000
+2017-08-23 12:36:08 [main] INFO  BaseSetup:88 - Executing step: 8; Checkout; assertText->xpath = //div[@id='pageContent']/div/div[2]/div/div/h5 / YOUR RECEIPT
+2017-08-23 12:36:11 [main] INFO  BaseSetup:88 - Executing step: 1; Logout; click->xpath = //a[contains(@href, '/mauijimb2bstorefront/logout')] / 
+2017-08-23 12:36:14 [main] INFO  BaseSetup:88 - Executing step: 2; Logout; pause-> =  / 3000

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2B Checkout Execution Suite on Mac Safari]">
-  <parameter name="appURL" value="https://usmauijimb2b.stg/mauijimb2bstorefront"/>
-  <parameter name="browserType" value="saucelabsMacSafari"/>
-  <test name="Place Order(failed)">
-    <parameter name="testData" value="MJ_B2B_PlaceOrder.xlsx"/>
-    <parameter name="testCase" value="MJ_B2B_PlaceOrder.xlsx"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2B Checkout Execution Suite]">
+  <parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="Guest Checkout(failed)">
+    <parameter name="testData" value="MJ63_B2C_GuestCheckout.xlsx"/>
+    <parameter name="testCase" value="MJ63_B2C_GuestCheckout.xlsx"/>
     <classes>
       <class name="com.pragiti.excutionEngine.UIExecutor">
         <methods>
@@ -19,5 +19,5 @@
         </methods>
       </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
     </classes>
-  </test> <!-- Place Order(failed) -->
-</suite> <!-- Failed suite [Maui Jim B2B Checkout Execution Suite on Mac Safari] -->
+  </test> <!-- Guest Checkout(failed) -->
+</suite> <!-- Failed suite [Maui Jim B2B Checkout Execution Suite] -->
