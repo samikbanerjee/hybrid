@@ -49,6 +49,7 @@ public class UIExecutor extends BaseSetup {
 		testCase=getTestCase();
 		testData=getTestData();
 		testName = testContext.getName();
+		
 	}
 	
 	

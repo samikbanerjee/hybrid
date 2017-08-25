@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,6 +16,8 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -25,7 +28,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public abstract class BaseSetup {
+public abstract class BaseSetup  {
+
 
 	public static final Logger LOG = LogManager.getLogger();
 	private static String appUrl;
@@ -34,9 +38,30 @@ public abstract class BaseSetup {
 	private String testCase;
 	private String testData;
 	private static String suiteName;
-	// Selenium URI -- static same for everyone.
-	public static String seleniumURI = null;
+
 	public abstract void setUp();
+	
+	//Sauce Integration--Start
+	public static String seleniumURI = null;
+	private ThreadLocal<WebDriver> webDriver =new ThreadLocal<WebDriver>();
+	private ThreadLocal<String> sessionId = new ThreadLocal<String>();
+	 /**
+     * @return the {@link WebDriver} for the current thread
+     */
+    public WebDriver getWebDriver() {
+        return webDriver.get();
+    }
+	
+    /**
+    *
+    * @return the Sauce Job id for the current thread
+    */
+   public String getSessionId() {
+       return sessionId.get();
+   }
+	
+	//Sauce Integration--End
+	
 	
 	@Parameters({ "browserType", "appURL" })
 	@BeforeSuite(alwaysRun = true)
@@ -169,26 +194,46 @@ public abstract class BaseSetup {
 	
 	private WebDriver initSaucelabsJenkinsSetup(String appURL) throws MalformedURLException
 	{
+		
+		
 		final DesiredCapabilities caps = new DesiredCapabilities();
 	
 		caps.setBrowserName(System.getenv("SELENIUM_BROWSER"));
 		caps.setVersion(System.getenv("SELENIUM_VERSION"));
 		caps.setCapability(CapabilityType.PLATFORM, System.getenv("SELENIUM_PLATFORM"));
-		
+		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
 		
 		seleniumURI = SauceHelpers.buildSauceUri();
-		WebDriver driver = new RemoteWebDriver(
-				new URL("http://" + System.getenv("SAUCE_USERNAME") + ":" + System.getenv("SAUCE_ACCESS_KEY") + seleniumURI + "/wd/hub"),
-				caps);
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.navigate().to(appURL);
+		
+		// Launch remote browser and set it as the current thread
+		webDriver.set(new RemoteWebDriver(new URL("http://" + System.getenv("SAUCE_USERNAME") + ":" 
+						+ System.getenv("SAUCE_ACCESS_KEY") + seleniumURI + "/wd/hub"),	caps));
+		//set current sessionId
+        String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
+        sessionId.set(id);
+        
+        WebDriver dr=this.getWebDriver(); 
+		
+		dr.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		dr.manage().window().maximize();
+		dr.navigate().to(appURL);
 
 		
-		return driver;
+		return dr;
 	}
+	
+    /**
+     * Method that gets invoked after test.
+     * Dumps browser log and
+     * Closes the browser
+     */
+    @AfterMethod
+    public void tearDown(ITestResult result) throws Exception {
+        ((JavascriptExecutor) webDriver.get()).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
+    }
+
 
 	protected static WebDriver initChromeDriver(String appURL) {
 		LOG.info("Launching google chrome with new profile..");
