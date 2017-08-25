@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,8 +15,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -38,29 +35,10 @@ public abstract class BaseSetup  {
 	private String testCase;
 	private String testData;
 	private static String suiteName;
-
+	public String testName;
+	
 	public abstract void setUp();
-	
-	//Sauce Integration--Start
 	public static String seleniumURI = null;
-	private ThreadLocal<WebDriver> webDriver =new ThreadLocal<WebDriver>();
-	private ThreadLocal<String> sessionId = new ThreadLocal<String>();
-	 /**
-     * @return the {@link WebDriver} for the current thread
-     */
-    public WebDriver getWebDriver() {
-        return webDriver.get();
-    }
-	
-    /**
-    *
-    * @return the Sauce Job id for the current thread
-    */
-   public String getSessionId() {
-       return sessionId.get();
-   }
-	
-	//Sauce Integration--End
 	
 	
 	@Parameters({ "browserType", "appURL" })
@@ -90,6 +68,12 @@ public abstract class BaseSetup  {
 		} catch (Exception e) {
 			LOG.error("Error....." + e.getMessage() + e);
 		}
+	}
+	
+	@BeforeTest
+	public void setUpTestName(final ITestContext testContext)
+	{
+		testName = testContext.getName();
 	}
 
 	/**
@@ -204,17 +188,12 @@ public abstract class BaseSetup  {
 		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
-		
+		caps.setCapability("name",testName);
 		seleniumURI = SauceHelpers.buildSauceUri();
-		
-		// Launch remote browser and set it as the current thread
-		webDriver.set(new RemoteWebDriver(new URL("http://" + System.getenv("SAUCE_USERNAME") + ":" 
-						+ System.getenv("SAUCE_ACCESS_KEY") + seleniumURI + "/wd/hub"),	caps));
-		//set current sessionId
-        String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
-        sessionId.set(id);
-        
-        WebDriver dr=this.getWebDriver(); 
+		WebDriver dr = new RemoteWebDriver(
+				new URL("http://" + B2CATAConfig.getString("authentication.saucelabs.username") + ":"
+						+ B2CATAConfig.getString("authentication.saucelabs.password") + seleniumURI + "/wd/hub"),
+				caps);
 		
 		dr.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		dr.manage().window().maximize();
@@ -224,15 +203,7 @@ public abstract class BaseSetup  {
 		return dr;
 	}
 	
-    /**
-     * Method that gets invoked after test.
-     * Dumps browser log and
-     * Closes the browser
-     */
-    @AfterMethod
-    public void tearDown(ITestResult result) throws Exception {
-        ((JavascriptExecutor) webDriver.get()).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
-    }
+  
 
 
 	protected static WebDriver initChromeDriver(String appURL) {

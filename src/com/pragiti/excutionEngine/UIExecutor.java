@@ -12,7 +12,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -37,7 +36,7 @@ public class UIExecutor extends BaseSetup {
 	public String testCase;
 	public String testData;
 	public ExtentTest test;
-	public  String testName;
+	
 	
 	@BeforeClass
 	public void setUp() {
@@ -45,18 +44,21 @@ public class UIExecutor extends BaseSetup {
 	}
 	
 	@BeforeTest
-	public void setUpTest(final ITestContext testContext){
+	public void setUpTest(){
 		testCase=getTestCase();
 		testData=getTestData();
-		testName = testContext.getName();
+		
 		
 	}
 	
 	
 	@Test(dataProvider = "uiexecxlsx")
 	public void execute(String[] sD) throws Exception{
-		test=extent.createTest(testName, "Based on the Test Scripts provided in file - "+testCase);
+		test=extent.createTest(testName, "Based on the Test Scripts provided in file - "+testCase);	
 		String applUrl = getAppUrl();
+		
+		
+		
 		ActionKeys  acts=new ActionKeys(driver);
 
 		List<TestStep> steps = TestStepsReader.getTestStepsFromXlsx(testCase, "TestCases");
@@ -110,6 +112,8 @@ public class UIExecutor extends BaseSetup {
     	}
         else
             test.pass("Test passed");
+  
+    	
         extent.flush();
     }
 	
@@ -143,4 +147,5 @@ public class UIExecutor extends BaseSetup {
         FileUtils.copyFile(source, destination);                
         return dest;
     }
+	
 }
