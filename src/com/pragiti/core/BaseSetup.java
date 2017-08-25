@@ -189,6 +189,7 @@ public abstract class BaseSetup  {
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
 		caps.setCapability("name",testName);
+		LOG.info(caps.getCapability("build").toString()+ caps.getCapability("SELENIUM_BROWSER").toString()+caps.getCapability("SELENIUM_VERSION").toString()+caps.getCapability("name").toString());
 		seleniumURI = SauceHelpers.buildSauceUri();
 		WebDriver dr = new RemoteWebDriver(
 				new URL("http://" + B2CATAConfig.getString("authentication.saucelabs.username") + ":"
