@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -86,6 +85,7 @@ public abstract class BaseSetup  {
 		if (LOG.isDebugEnabled()) {
 			LOG.debug("executing tear down ");
 		}
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.quit();
 	}
@@ -198,10 +198,7 @@ public abstract class BaseSetup  {
 		
 		dr.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		dr.manage().window().maximize();
-		dr.navigate().to(appURL);
-		
-		((JavascriptExecutor)dr).executeScript("sauce:job-name="+testName);
-		
+		dr.navigate().to(appURL);		
 		return dr;
 	}
 	

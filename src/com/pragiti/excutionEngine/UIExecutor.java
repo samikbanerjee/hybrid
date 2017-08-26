@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -113,8 +114,8 @@ public class UIExecutor extends BaseSetup {
     	}
         else
             test.pass("Test passed");
-    	
-    	
+    	String sId= ((RemoteWebDriver)driver).getSessionId().toString();
+    	LOG.info(sId);
     	((JavascriptExecutor)driver).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
         extent.flush();
     }
