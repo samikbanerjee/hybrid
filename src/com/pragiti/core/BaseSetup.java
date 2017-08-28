@@ -59,7 +59,7 @@ public abstract class BaseSetup  {
 			{
 				String sauceJId= "https://saucelabs.com/jobs/"+((RemoteWebDriver)driver).getSessionId().toString();
 		    	LOG.info(sauceJId);
-		    	extentReportName = suiteName + "(Sauce Job: "+sauceJId+")";
+		    	extentReportName = suiteName + " (Sauce Job: "+sauceJId+")";
 			}
 			else
 			{
@@ -206,7 +206,7 @@ public abstract class BaseSetup  {
 		caps.setBrowserName(System.getenv("SELENIUM_BROWSER"));
 		caps.setVersion(System.getenv("SELENIUM_VERSION"));
 		caps.setCapability(CapabilityType.PLATFORM, System.getenv("SELENIUM_PLATFORM"));
-		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
+		caps.setCapability("build", System.getenv("SAUCE_BUILD_NAME")); 
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
 		caps.setCapability("name",suiteName);
