@@ -58,7 +58,7 @@ public abstract class BaseSetup  {
 			{
 				String sauceJId= "https://saucelabs.com/jobs/"+((RemoteWebDriver)driver).getSessionId().toString();
 		    	LOG.info(sauceJId);
-		    	extentReportName = suiteName + " ( <a href=\""+sauceJId+"\">Sauce Labs Job </a> )";
+		    	extentReportName = suiteName + " ( <a href=\""+sauceJId+"\" target=\"_blank\">Sauce Labs Job </a> )";
 			}
 			else
 			{
@@ -326,7 +326,7 @@ public abstract class BaseSetup  {
 	private ExtentHtmlReporter genHtmlExtReporter(String reportName, String reportTitle) {
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(CoreConstants.TESTREPORTPATH + reportName
 				+ CoreConstants.ExtentReports + "_" + Timestamp.stamp() + ".html");
-		reporter.config().setChartVisibilityOnOpen(true);
+		reporter.config().setChartVisibilityOnOpen(false);
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setDocumentTitle(reportName);
 		reporter.config().setEncoding(CoreConstants.REPORTENCODING);
