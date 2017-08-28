@@ -59,7 +59,7 @@ public abstract class BaseSetup  {
 			{
 				String sauceJId= "https://saucelabs.com/jobs/"+((RemoteWebDriver)driver).getSessionId().toString();
 		    	LOG.info(sauceJId);
-		    	extentReportName = suiteName + " (Sauce Job: "+sauceJId+")";
+		    	extentReportName = suiteName + " ( <a href=\""+sauceJId+"\">Sauce Labs Job </a> )";
 			}
 			else
 			{
