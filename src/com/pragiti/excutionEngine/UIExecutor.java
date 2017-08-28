@@ -143,7 +143,7 @@ public class UIExecutor extends BaseSetup {
     {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String dest = CoreConstants.TESTREPORTPATH+screenShotName+"_"+Timestamp.stamp()+".png";
+        String dest = screenShotName+"_"+Timestamp.stamp()+".png";
         File destination = new File(dest);
         FileUtils.copyFile(source, destination);                
         return dest;

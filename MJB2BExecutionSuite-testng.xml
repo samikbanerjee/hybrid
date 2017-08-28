@@ -41,12 +41,12 @@
 		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
 	
-
+	 -->
 	<test name="Logout of Site">
 		<parameter name="testCase" value="MJ_B2B_Logout.xlsx"/>
 		<parameter name="testData" value="MJ_B2B_Logout.xlsx"/>
 		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
-	 -->
+
 	
 </suite>
