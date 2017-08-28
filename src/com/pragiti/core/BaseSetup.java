@@ -62,8 +62,10 @@ public abstract class BaseSetup  {
 		    	extentReportName = suiteName + "(Sauce Job: "+sauceJId+")";
 			}
 			else
+			{
+				LOG.info("No saucelabs detectected; setting extentReportName");
 				extentReportName = suiteName;
-			
+			}
 			// extent reports
 			extent = new ExtentReports();
 			ExtentHtmlReporter reporter = this.genHtmlExtReporter(extentReportName);
