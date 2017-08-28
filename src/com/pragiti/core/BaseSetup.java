@@ -68,7 +68,7 @@ public abstract class BaseSetup  {
 			}
 			// extent reports
 			extent = new ExtentReports();
-			ExtentHtmlReporter reporter = this.genHtmlExtReporter(extentReportName);
+			ExtentHtmlReporter reporter = this.genHtmlExtReporter(suiteName, extentReportName);
 			extent.attachReporter(reporter);
 			
 			setAppUrl(appURL);
@@ -324,7 +324,7 @@ public abstract class BaseSetup  {
 		this.testData = testData;
 	}
 
-	private ExtentHtmlReporter genHtmlExtReporter(String reportName) {
+	private ExtentHtmlReporter genHtmlExtReporter(String reportName, String reportTitle) {
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(CoreConstants.TESTREPORTPATH + reportName
 				+ CoreConstants.ExtentReports + "_" + Timestamp.stamp() + ".html");
 		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
@@ -332,7 +332,7 @@ public abstract class BaseSetup  {
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setDocumentTitle(reportName);
 		reporter.config().setEncoding(CoreConstants.REPORTENCODING);
-		reporter.config().setReportName(reportName);
+		reporter.config().setReportName(reportTitle);
 		return reporter;
 	}
 }
