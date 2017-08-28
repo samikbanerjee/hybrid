@@ -55,7 +55,7 @@ public abstract class BaseSetup  {
 			String extentReportName;
 			//Sauce Job Link
 			LOG.info("browserType: "+ browserType+"; appURL: "+appURL);
-			if(browserType=="saucelabs")
+			if(browserType.equalsIgnoreCase("saucelabs"))
 			{
 				String sauceJId= "https://saucelabs.com/jobs/"+((RemoteWebDriver)driver).getSessionId().toString();
 		    	LOG.info(sauceJId);
@@ -63,7 +63,7 @@ public abstract class BaseSetup  {
 			}
 			else
 			{
-				LOG.info("No saucelabs detectected; setting extentReportName");
+				LOG.info("No saucelabs detectected; setting extentReportName");	
 				extentReportName = suiteName;
 			}
 			// extent reports
