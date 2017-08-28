@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -36,6 +37,7 @@ public abstract class BaseSetup  {
 	private String testData;
 	private static String suiteName;
 	public String testName;
+	public boolean suiteFailure=false;
 	
 	public abstract void setUp();
 	public static String seleniumURI = null;
@@ -48,11 +50,24 @@ public abstract class BaseSetup  {
 		try {
 			seleniumURI = SauceHelpers.buildSauceUri();
 			suiteName  = ctx.getSuite().getName();
+			setDriver(browserType, appURL);
+			
+			String extentReportName;
+			//Sauce Job Link
+			if(browserType=="saucelabs")
+			{
+				String sauceJId= "https://saucelabs.com/jobs/"+((RemoteWebDriver)driver).getSessionId().toString();
+		    	LOG.info(sauceJId);
+		    	extentReportName = suiteName + "(Sauce Job: "+sauceJId+")";
+			}
+			else
+				extentReportName = suiteName;
+			
 			// extent reports
 			extent = new ExtentReports();
-			ExtentHtmlReporter reporter = this.genHtmlExtReporter(ctx.getSuite().getName());
+			ExtentHtmlReporter reporter = this.genHtmlExtReporter(extentReportName);
 			extent.attachReporter(reporter);
-			setDriver(browserType, appURL);
+			
 			setAppUrl(appURL);
 		} catch (Exception e) {
 			LOG.error("Error....." + e.getMessage() + e);
@@ -85,6 +100,8 @@ public abstract class BaseSetup  {
 		if (LOG.isDebugEnabled()) {
 			LOG.debug("executing tear down ");
 		}
+		
+		((JavascriptExecutor)driver).executeScript("sauce:job-result=" + (suiteFailure ? "failed" : "passed"));
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.quit();
@@ -189,7 +206,7 @@ public abstract class BaseSetup  {
 		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", System.getenv("TUNNEL_IDENTIFIER")); 
-		caps.setCapability("name",testName);
+		caps.setCapability("name",suiteName);
 		seleniumURI = SauceHelpers.buildSauceUri();
 		WebDriver dr = new RemoteWebDriver(
 				new URL("http://" + B2CATAConfig.getString("authentication.saucelabs.username") + ":"
