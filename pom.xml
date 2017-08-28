@@ -42,7 +42,7 @@
 		        <version>2.20</version>
 		        <configuration>
 		          <suiteXmlFiles>
-		          	<suiteXmlFile>${TESTNG_XML_FILE}</suiteXmlFile>
+		          	${TESTNG_XML_FILE}
 		          </suiteXmlFiles>
 		        </configuration>
 		     </plugin>

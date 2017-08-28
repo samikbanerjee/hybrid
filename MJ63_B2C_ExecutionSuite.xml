@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Maui Jim B2B Checkout Execution Suite">
+<suite name="Maui Jim B2C Checkout Execution Suite">
 
 	
 	<parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US" />
