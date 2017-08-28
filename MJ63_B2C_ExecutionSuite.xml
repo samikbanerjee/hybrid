@@ -3,7 +3,7 @@
 
 	
 	<parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US" />
-	<parameter name="browserType" value="firefox"/>
+	<parameter name="browserType" value="${BROWSER_TYPE}"/>
 
 	<test name="Guest Checkout">
 		<parameter name="testCase" value="MJ63_B2C_GuestCheckout.xlsx"/>

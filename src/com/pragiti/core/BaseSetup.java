@@ -23,6 +23,7 @@ import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public abstract class BaseSetup  {
@@ -181,6 +182,7 @@ public abstract class BaseSetup  {
 		caps.setCapability(CapabilityType.VERSION, browserVersion);
 		caps.setCapability("screenResolution", screenResolution); 
 		caps.setCapability("build", suiteName.replace(" ", "_")+"_"+Timestamp.stamp()); 
+		caps.setCapability("name",suiteName);
 		caps.setCapability("acceptSslCerts", true);
 		caps.setCapability("tunnel-identifier", "mj63"); 
 		seleniumURI = SauceHelpers.buildSauceUri();
@@ -326,7 +328,8 @@ public abstract class BaseSetup  {
 	private ExtentHtmlReporter genHtmlExtReporter(String reportName, String reportTitle) {
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(CoreConstants.TESTREPORTPATH + reportName
 				+ CoreConstants.ExtentReports + "_" + Timestamp.stamp() + ".html");
-		reporter.config().setChartVisibilityOnOpen(false);
+		reporter.config().setChartVisibilityOnOpen(true);
+		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setDocumentTitle(reportName);
 		reporter.config().setEncoding(CoreConstants.REPORTENCODING);
