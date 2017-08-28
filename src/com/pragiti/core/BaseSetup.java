@@ -23,7 +23,6 @@ import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public abstract class BaseSetup  {
@@ -327,7 +326,6 @@ public abstract class BaseSetup  {
 	private ExtentHtmlReporter genHtmlExtReporter(String reportName, String reportTitle) {
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(CoreConstants.TESTREPORTPATH + reportName
 				+ CoreConstants.ExtentReports + "_" + Timestamp.stamp() + ".html");
-		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		reporter.config().setChartVisibilityOnOpen(true);
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setDocumentTitle(reportName);
