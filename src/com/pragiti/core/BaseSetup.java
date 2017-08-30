@@ -119,7 +119,6 @@ public abstract class BaseSetup  {
 	 * 
 	 */
 	private void setDriver(String browserType, String appURL) throws MalformedURLException {
-		String[] s;
 		switch (browserType) {
 		case "chrome":
 			driver = initChromeDriver(appURL);
@@ -130,12 +129,11 @@ public abstract class BaseSetup  {
 		case "IE":
 			driver = initIEDriver(appURL);
 			break;
-		case "saucelabsMacSafari":
-			s=B2CATAConfig.getString("sauce.config.mac.safari").split(",");
-			driver = initSaucelabsSetup(appURL, s[0], s[1], s[2], s[3] );
-		case "saucelabsWindowsFirefox":
-			s=B2CATAConfig.getString("sauce.config.windows.firefox").split(",");
-			driver = initSaucelabsSetup(appURL, s[0], s[1], s[2], s[3] );
+		case "slMacSafari":
+			driver = initSaucelabsSetup(appURL, "macOS 10.12","safari","10.0","1280x960" );
+			break;
+		case "slWindowsFirefox":
+			driver = initSaucelabsSetup(appURL, "Windows 10","firefox","54.0","1280x1024" );
 			break;
 		case "saucelabs":
 			driver = initSaucelabsJenkinsSetup(appURL);
@@ -175,7 +173,7 @@ public abstract class BaseSetup  {
 	private WebDriver initSaucelabsSetup(String appURL, String os, String browserName,  String browserVersion, String screenResolution) throws MalformedURLException {
 		// TODO: Parallel
 		final DesiredCapabilities caps = new DesiredCapabilities();
-		
+		LOG.info(browserName+"--"+os+"--"+browserVersion+"--"+screenResolution);
 		
 		caps.setCapability(CapabilityType.BROWSER_NAME, browserName );
 		caps.setCapability(CapabilityType.PLATFORM, os); 

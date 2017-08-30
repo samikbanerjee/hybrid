@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2B Checkout Execution Suite]">
-  <parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US"/>
+  <parameter name="appURL" value="https://ustrade.mauijim.com/mauijimb2bstorefront"/>
   <parameter name="browserType" value="firefox"/>
-  <test name="Guest Checkout(failed)">
-    <parameter name="testData" value="MJ63_B2C_GuestCheckout.xlsx"/>
-    <parameter name="testCase" value="MJ63_B2C_GuestCheckout.xlsx"/>
+  <test name="Add Plano (and Reader) To Cart(failed)">
+    <parameter name="testData" value="MJ_B2B_PlanoATC.xlsx"/>
+    <parameter name="testCase" value="MJ_B2B_PlanoATC.xlsx"/>
     <classes>
       <class name="com.pragiti.excutionEngine.UIExecutor">
         <methods>
           <include name="tearDown"/>
+          <include name="setUpTestName"/>
           <include name="initiaLizeTest"/>
           <include name="execute" invocation-numbers="0"/>
           <include name="initializeTestBaseSetup"/>
@@ -19,5 +20,5 @@
         </methods>
       </class> <!-- com.pragiti.excutionEngine.UIExecutor -->
     </classes>
-  </test> <!-- Guest Checkout(failed) -->
+  </test> <!-- Add Plano (and Reader) To Cart(failed) -->
 </suite> <!-- Failed suite [Maui Jim B2B Checkout Execution Suite] -->

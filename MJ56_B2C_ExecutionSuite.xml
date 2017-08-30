@@ -2,12 +2,12 @@
 <suite name="Maui Jim B2C Checkout Execution Suite">
 
 	
-	<parameter name="appURL" value="https://stgc.mauijim.stg/US/en_US" />
+	<parameter name="appURL" value="https://usmauijim.stg/" />
 	<parameter name="browserType" value="${BROWSER_TYPE}"/>
 
 	<test name="Guest Checkout">
-		<parameter name="testCase" value="MJ63_B2C_GuestCheckout.xlsx"/>
-		<parameter name="testData" value="MJ63_B2C_GuestCheckout.xlsx"/>
+		<parameter name="testCase" value="GuestCheckout.xlsx"/>
+		<parameter name="testData" value="GuestCheckout.xlsx"/>
 		<classes><class name="com.pragiti.excutionEngine.UIExecutor"/></classes>
 	</test>
 
