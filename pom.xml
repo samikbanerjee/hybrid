@@ -41,9 +41,14 @@
 		        <artifactId>maven-surefire-plugin</artifactId>
 		        <version>2.20</version>
 		        <configuration>
-		          <suiteXmlFiles>
-		          	${TESTNG_XML_FILE}
-		          </suiteXmlFiles>
+		          <suiteXmlFiles>${TESTSUITE_FILE}</suiteXmlFiles>
+				  <skipTests>false</skipTests>
+		          <properties>
+		            <property>
+		                <name>suitethreadpoolsize</name>
+		                <value>${THREADS}</value>
+		            </property>
+		           </properties>
 		        </configuration>
 		     </plugin>
 		</plugins>

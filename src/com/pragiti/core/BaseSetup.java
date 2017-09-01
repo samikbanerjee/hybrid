@@ -35,7 +35,7 @@ public abstract class BaseSetup  {
 	public static ExtentReports extent;
 	private String testCase;
 	private String testData;
-	private static String suiteName;
+	protected static String suiteName;
 	public String testName;
 	public boolean suiteFailure=false;
 	

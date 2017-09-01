@@ -88,7 +88,7 @@ public class UIExecutor extends BaseSetup {
 				
 				test.pass("Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
 				step.getElementIdentifier()+" = "+step.getElementIdentifierValue()+" / "+sData);
-				LOG.info("Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
+				LOG.info(suiteName+"."+testName+"."+"Executing step: "+step.getTestCaseId()+"; "+step.getDescription()+"; "+step.getKeyWord()+"->"+
 						step.getElementIdentifier()+" = "+step.getElementIdentifierValue()+" / "+sData);
 				
 		}
