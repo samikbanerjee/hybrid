@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Maui Jim B2C Checkout Execution Suite]">
   <parameter name="appURL" value="https://usmauijim.stg/"/>
-  <parameter name="browserType" value="saucelabsMacSafari"/>
+  <parameter name="browserType" value="slWindowsFirefox"/>
   <test name="Guest Checkout(failed)">
     <parameter name="testData" value="GuestCheckout.xlsx"/>
     <parameter name="testCase" value="GuestCheckout.xlsx"/>
@@ -12,7 +12,7 @@
           <include name="tearDown"/>
           <include name="setUpTestName"/>
           <include name="initiaLizeTest"/>
-          <include name="execute" invocation-numbers="0"/>
+          <include name="execute" invocation-numbers="0 1"/>
           <include name="initializeTestBaseSetup"/>
           <include name="afterMethod"/>
           <include name="setUp"/>
