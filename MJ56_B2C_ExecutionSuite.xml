@@ -2,7 +2,7 @@
 <suite name="Maui Jim B2C Checkout Execution Suite">
 
 	
-	<parameter name="appURL" value="https://usmauijim.stg/" />
+	<parameter name="appURL" value="https://usmauijim.stg" />
 	<parameter name="browserType" value="${BROWSER_TYPE}"/>
 
 	<test name="Guest Checkout">
